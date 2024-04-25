@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemObject" load_steps=2 format=3 uid="uid://bsjoahijl6xsc"]
+
+[ext_resource type="Script" path="res://scripts/objects/item_object.gd" id="1_1iu7l"]
+
+[resource]
+script = ExtResource("1_1iu7l")
+object_number = 3
+object_name = "Double Barrel Super 5000"
+interact = false
+pick_up = true
+object_static = false
+sound_shoot = ""
+interact_sound = "sounds/DoubleBarrel/shotgun_cock.wav"

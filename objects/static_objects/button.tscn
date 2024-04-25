@@ -1,0 +1,79 @@
+[gd_scene load_steps=11 format=3 uid="uid://btemx2hj56h3t"]
+
+[ext_resource type="Script" path="res://scripts/Items/button.gd" id="1_vh1mi"]
+[ext_resource type="Script" path="res://scripts/Items/button_interact.gd" id="2_q4jw6"]
+[ext_resource type="PackedScene" uid="uid://bxosq6aq3obnt" path="res://composition_components/interact_component.tscn" id="3_iojba"]
+[ext_resource type="PackedScene" uid="uid://dlo81jj3dr15v" path="res://composition_components/label_component.tscn" id="4_skp72"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0snjk"]
+albedo_color = Color(0.462745, 0.462745, 0.462745, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7t62b"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dggu8"]
+size = Vector3(0.528991, 0.349125, 0.293715)
+
+[sub_resource type="Animation" id="Animation_q2jf1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_i2nlf"]
+resource_name = "button_press"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0.09), Vector3(0, 0, 0.09), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_02612"]
+_data = {
+"RESET": SubResource("Animation_q2jf1"),
+"button_press": SubResource("Animation_i2nlf")
+}
+
+[node name="Button" type="Node3D"]
+script = ExtResource("1_vh1mi")
+
+[node name="Button" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.498555, 0, 0, 0, 0.247326, 0, 0, 0, 0.168731, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_0snjk")
+mesh = SubResource("BoxMesh_7t62b")
+skeleton = NodePath("")
+
+[node name="InteractComponent" parent="." instance=ExtResource("3_iojba")]
+script = ExtResource("2_q4jw6")
+
+[node name="LabelComponent" parent="." node_paths=PackedStringArray("Interact") instance=ExtResource("4_skp72")]
+LabelName = "Vending Machine"
+LabelType = 1
+Interact = NodePath("../InteractComponent")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LabelComponent"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00474653, 0)
+shape = SubResource("BoxShape3D_dggu8")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_02612")
+}
+
+[connection signal="ButtonPressed" from="InteractComponent" to="." method="_on_interact_component_button_pressed"]

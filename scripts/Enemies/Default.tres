@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=2 format=3 uid="uid://ceb7lby31ntot"]
+
+[ext_resource type="Script" path="res://scripts/objects/enemy.gd" id="1_7epqv"]
+
+[resource]
+script = ExtResource("1_7epqv")
+object_name = "Enemy"
+interact = false
+pick_up = false
+object_static = true

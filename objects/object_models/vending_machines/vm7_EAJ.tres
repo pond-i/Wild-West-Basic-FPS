@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="VendingMachine" load_steps=3 format=3 uid="uid://dif4okct6m807"]
+
+[ext_resource type="PackedScene" uid="uid://do0htgov4pt7w" path="res://objects/static_objects/vending_7.tscn" id="1_cfscd"]
+[ext_resource type="Script" path="res://scripts/objects/vending_machine.gd" id="1_h4q8b"]
+
+[resource]
+script = ExtResource("1_h4q8b")
+object_name = "Edds Ape Juice"
+model = ExtResource("1_cfscd")
+sound_shoot = ""
+interact_sound = ""

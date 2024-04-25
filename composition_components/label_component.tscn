@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlo81jj3dr15v"]
+
+[ext_resource type="Script" path="res://composition_components/Scripts/LabelComponent.gd" id="1_k4ia2"]
+
+[node name="LabelComponent" type="Area3D"]
+priority = 1
+script = ExtResource("1_k4ia2")
+LabelName = "Test"

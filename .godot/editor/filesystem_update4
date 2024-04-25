@@ -1,0 +1,9 @@
+res://scenes/main.tscn
+res://sprites/burst_animation.tres
+res://scripts/action.gd
+res://scripts/impact.gd
+res://scripts/player.gd
+res://composition_components/draggable_component.tscn
+res://composition_components/interact_component.tscn
+res://composition_components/label_component.tscn
+res://composition_components/pick_up_component.tscn

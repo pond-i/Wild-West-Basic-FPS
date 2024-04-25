@@ -1,0 +1,395 @@
+[gd_scene load_steps=9 format=3 uid="uid://bmmgidisq43qm"]
+
+[ext_resource type="PackedScene" uid="uid://r3lmcj70n2w1" path="res://models/gbl_models/DoubleBarrel.glb" id="1_knqrp"]
+[ext_resource type="Script" path="res://scripts/objects/weapons/double_barrel.gd" id="2_0mdqm"]
+[ext_resource type="PackedScene" uid="uid://bgyoen26afip" path="res://models/gbl_models/Shotgun_shell.glb" id="3_d32ib"]
+
+[sub_resource type="Animation" id="Animation_bb3bn"]
+resource_name = "Fire"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5),
+"transitions": PackedFloat32Array(0.353553, 0.353553, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0.349066, 0, 0), Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5),
+"transitions": PackedFloat32Array(0.353553, 0.353553, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0.132926, 0.608958), Vector3(0, 0, 0)]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.05),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"Fire"
+}]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2/cuboid3:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0.0872665, 0, 0), Vector3(-0.576098, 0, 0), Vector3(-0.576098, 0, 0), Vector3(0.0872665, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_vegaq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2/cuboid3:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.0872665, 0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2/bone:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Node2/bone/Chambers/Shotgun_shell:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.0647231, 0.329442, -0.219034)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Node2/bone/Chambers/Shotgun_shell:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1.5708, 0, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Node2/bone/Chambers2/Shotgun_shell2:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.0647231, 0.329442, -0.219034)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Node2/bone/Chambers2/Shotgun_shell2:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1.5708, 0, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Node2/bone/Chambers2/Shotgun_shell2:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Node2/bone/Chambers/Shotgun_shell:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_di7of"]
+resource_name = "Reload"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5, 1.5, 1.6, 1.7, 2, 2.1, 2.3, 3),
+"transitions": PackedFloat32Array(0.5, 0.5, 0.5, 1, 1, 1, 1, 1, 1, 0.5),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(0, 0.26271, -0.0701848), Vector3(0, 0.26271, -0.0701848), Vector3(0, 0.116504, -0.30787), Vector3(0, 0.26271, -0.0701848), Vector3(0, 0.26271, -0.0701848), Vector3(0, 0.116504, -0.30787), Vector3(0, 0.26271, -0.0701848), Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3, 1.5, 1.6, 1.7, 2, 2.1, 2.3, 2.5, 3),
+"transitions": PackedFloat32Array(0.5, 0.5, 0.5, 1, 1, 1, 1, 1, 1, 0.5, 0.5),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0.195477, 0, 0), Vector3(0.545258, 0, 0), Vector3(0.545258, 0, 0), Vector3(0.545258, 0, 0), Vector3(0.545258, 0, 0), Vector3(0.545258, 0, 0), Vector3(0.545258, 0, 0), Vector3(0.545258, 0, 0), Vector3(0.545258, 0, 0), Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2/bone:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.3, 0.5, 2.3, 2.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(-1.65806, 0, 0), Vector3(-1.65806, 0, 0), Vector3(0, 0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2/bone/Chambers/Shotgun_shell:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.5, 0.6, 0.8, 1, 1.5, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(-0.0647231, 0.329442, -0.219034), Vector3(-0.322122, 1.15142, -0.109607), Vector3(-0.896169, 1.41602, 0.688103), Vector3(-0.896169, 0.948574, 4.26323), Vector3(-0.065, 0.64, -0.221), Vector3(-0.0647231, 0.329442, -0.219034)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Node2/bone/Chambers/Shotgun_shell:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.5, 0.6, 0.8, 1, 1.5, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(1.5708, 0, 0), Vector3(0.682003, 2.67096, 2.93247), Vector3(0.323066, -2.67322, -0.198009), Vector3(0.44717, -2.3425, 0.0944847), Vector3(1.5708, 0, 0), Vector3(1.5708, 0, 0)]
+}
+tracks/5/type = "method"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.4, 0.5, 1, 1.1, 1.6, 2.1, 2.25, 2.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"values": [{
+"args": [],
+"method": &"Cock"
+}, {
+"args": [],
+"method": &"Fwump"
+}, {
+"args": [],
+"method": &"Shell"
+}, {
+"args": [],
+"method": &"Shell"
+}, {
+"args": [],
+"method": &"Mag"
+}, {
+"args": [],
+"method": &"Mag"
+}, {
+"args": [],
+"method": &"CockBack"
+}, {
+"args": [],
+"method": &"Cock"
+}]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Node2/bone/Chambers2/Shotgun_shell2:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.5, 0.6, 0.8, 1, 2, 2.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0.0776335, 0.329442, -0.219034), Vector3(0.202096, 0.736474, -0.41968), Vector3(0.924616, 1.15173, 0.422703), Vector3(1.45279, 2.20724, 3.79926), Vector3(0.078, 0.64, -0.216), Vector3(0.0776335, 0.329442, -0.219034)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Node2/bone/Chambers2/Shotgun_shell2:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0.5, 0.6, 0.8, 1, 2, 2.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(1.5708, 0, 0), Vector3(1.36765, -1.62106, -1.52053), Vector3(-0.637924, -2.93661, -0.20498), Vector3(0.29147, -1.43815, -0.204204), Vector3(1.5708, 0, 0), Vector3(1.5708, 0, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Node2/bone/Chambers2/Shotgun_shell2:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Node2/bone/Chambers/Shotgun_shell:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_f1di5"]
+resource_name = "Slide"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2/cuboid3:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.125),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0.0872665, 0, 0), Vector3(-0.329274, 0, 0), Vector3(0.0872665, 0, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"Empty"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eoh0v"]
+_data = {
+"Fire": SubResource("Animation_bb3bn"),
+"RESET": SubResource("Animation_vegaq"),
+"Reload": SubResource("Animation_di7of"),
+"Slide": SubResource("Animation_f1di5")
+}
+
+[node name="DoubleBarrel" instance=ExtResource("1_knqrp")]
+script = ExtResource("2_0mdqm")
+double_barrel_empty = "sounds/DoubleBarrel/shotgun_empty.wav"
+double_barrel_fire = "sounds/DoubleBarrel/shotgun_fire.wav"
+double_barrel_cock = "sounds/DoubleBarrel/shotgun_cock.wav"
+double_barrel_cock_back = "sounds/DoubleBarrel/shotgun_cock_back.wav"
+double_barrel_shell = "sounds/DoubleBarrel/shotgun_shell_empty.wav"
+double_barrel_mag = "sounds/DoubleBarrel/shotgun_load.wav"
+double_barrel_fwump = "sounds/DoubleBarrel/shotgun_fwump.wav"
+
+[node name="cuboid3" parent="Node2" index="2"]
+transform = Transform3D(1, 0, 0, 0, 0.996195, -0.0871558, 0, 0.0871558, 0.996195, 0, 0.171875, 0.5625)
+
+[node name="bone" parent="Node2" index="6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.104167, 0.390625)
+
+[node name="Shotgun_shell" parent="Node2/bone/Chambers" index="0" instance=ExtResource("3_d32ib")]
+transform = Transform3D(1, 0, 0, 0, -3.61999e-06, -1, 0, 1, -3.61999e-06, -0.0647231, 0.329442, -0.219034)
+visible = false
+
+[node name="Shotgun_shell2" parent="Node2/bone/Chambers2" index="0" instance=ExtResource("3_d32ib")]
+transform = Transform3D(1, 0, 0, 0, -3.61999e-06, -1, 0, 1, -3.61999e-06, -0.0647231, 0.329442, -0.219034)
+visible = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1"]
+libraries = {
+"": SubResource("AnimationLibrary_eoh0v")
+}

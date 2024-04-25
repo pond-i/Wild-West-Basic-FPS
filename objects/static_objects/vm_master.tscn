@@ -1,0 +1,62 @@
+[gd_scene load_steps=7 format=3 uid="uid://db0vxl7j6guve"]
+
+[ext_resource type="PackedScene" uid="uid://bxosq6aq3obnt" path="res://composition_components/interact_component.tscn" id="1_f8rnq"]
+[ext_resource type="Script" path="res://scripts/Items/vending_machine.gd" id="2_1fmut"]
+[ext_resource type="Resource" uid="uid://dvvjpdoqrphld" path="res://objects/object_models/Vending_Machine.tres" id="4_dufuy"]
+[ext_resource type="PackedScene" uid="uid://dlo81jj3dr15v" path="res://composition_components/label_component.tscn" id="5_5nmor"]
+[ext_resource type="PackedScene" uid="uid://btemx2hj56h3t" path="res://objects/static_objects/button.tscn" id="6_tcrdy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lkqux"]
+size = Vector3(2.71857, 4.44895, 2.59171)
+
+[node name="VM_Master" type="Node3D"]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+collision_layer = 2049
+collision_mask = 2049
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.53686, -0.117527)
+shape = SubResource("BoxShape3D_lkqux")
+
+[node name="InteractComponent" parent="." instance=ExtResource("1_f8rnq")]
+script = ExtResource("2_1fmut")
+VendingMachineType = 0
+model = ExtResource("4_dufuy")
+
+[node name="LabelComponent" parent="." node_paths=PackedStringArray("Interact") instance=ExtResource("5_5nmor")]
+LabelType = 1
+Interact = NodePath("../InteractComponent")
+
+[node name="Button" parent="." instance=ExtResource("6_tcrdy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.920519, 3.6443, -1.34)
+ButtonName = "Vending Machine"
+
+[node name="Button2" parent="." instance=ExtResource("6_tcrdy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.920519, 3.2443, -1.34)
+ButtonName = "Vending Machine"
+
+[node name="Button3" parent="." instance=ExtResource("6_tcrdy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.920519, 2.8443, -1.34)
+ButtonName = "Vending Machine"
+
+[node name="Button4" parent="." instance=ExtResource("6_tcrdy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.920519, 2.4443, -1.34)
+ButtonName = "Vending Machine"
+
+[node name="Button5" parent="." instance=ExtResource("6_tcrdy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.920519, 2.0443, -1.34)
+ButtonName = "Vending Machine"
+
+[node name="OutputMarker" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.237737, 0.816955, -1.73834)
+
+[node name="OutputDirection" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.237737, 0.62839, -2.60856)
+
+[connection signal="ButtonPressedParent" from="Button" to="InteractComponent" method="_on_button_button_pressed_parent"]
+[connection signal="ButtonPressedParent" from="Button2" to="InteractComponent" method="_on_button_2_button_pressed_parent"]
+[connection signal="ButtonPressedParent" from="Button3" to="InteractComponent" method="_on_button_3_button_pressed_parent"]
+[connection signal="ButtonPressedParent" from="Button4" to="InteractComponent" method="_on_button_4_button_pressed_parent"]
+[connection signal="ButtonPressedParent" from="Button5" to="InteractComponent" method="_on_button_5_button_pressed_parent"]

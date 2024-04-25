@@ -1,0 +1,140 @@
+[gd_scene load_steps=16 format=3 uid="uid://wwwbw7104ywx"]
+
+[ext_resource type="PackedScene" uid="uid://dkk8q0ineqjkp" path="res://models/gbl_models/AmmoBox.glb" id="1_ectif"]
+[ext_resource type="Script" path="res://scripts/Items/ammo_box.gd" id="2_v5hru"]
+[ext_resource type="Resource" uid="uid://d3kph4tgv8jye" path="res://objects/object_models/Ammo_box.tres" id="3_vsq6q"]
+[ext_resource type="Shader" path="res://shaders/shimmer.gdshader" id="4_41tt2"]
+[ext_resource type="PackedScene" uid="uid://dlo81jj3dr15v" path="res://composition_components/label_component.tscn" id="5_t8tk1"]
+[ext_resource type="PackedScene" uid="uid://bxosq6aq3obnt" path="res://composition_components/interact_component.tscn" id="5_xcnyu"]
+[ext_resource type="Script" path="res://scripts/Items/ammo_box_interact.gd" id="6_vckro"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m4s80"]
+size = Vector3(1.94667, 1.54419, 1.02649)
+
+[sub_resource type="Animation" id="Animation_by30a"]
+resource_name = "Open"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2/bone2:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, -2.38913)]
+}
+
+[sub_resource type="Animation" id="Animation_b2o5m"]
+resource_name = "Opened"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2/bone2:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, -2.38913)]
+}
+
+[sub_resource type="Animation" id="Animation_adg3t"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2/bone2:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7cne0"]
+_data = {
+"Open": SubResource("Animation_by30a"),
+"Opened": SubResource("Animation_b2o5m"),
+"RESET": SubResource("Animation_adg3t")
+}
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_8l1cn"]
+radius = 8.27402
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cj1j4"]
+render_priority = 0
+shader = ExtResource("4_41tt2")
+shader_parameter/shine_color = Color(1, 1, 1, 1)
+shader_parameter/cycle_interval = 1.0
+shader_parameter/shine_speed = 2.0
+shader_parameter/shine_width = 3.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xmgau"]
+size = Vector3(3, 2, 2)
+
+[node name="AmmoBox" groups=["Interact"] instance=ExtResource("1_ectif")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
+
+[node name="AmmoBoxStaticBody" type="StaticBody3D" parent="." index="0" groups=["Interact"]]
+collision_layer = 2049
+collision_mask = 2049
+script = ExtResource("2_v5hru")
+item = ExtResource("3_vsq6q")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AmmoBoxStaticBody" index="0" groups=["Interact"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.80868, 0)
+shape = SubResource("BoxShape3D_m4s80")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AmmoBoxStaticBody" index="1"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_7cne0")
+}
+speed_scale = 0.8
+
+[node name="Timer" type="Timer" parent="AmmoBoxStaticBody" index="2"]
+one_shot = true
+
+[node name="Area3D" type="Area3D" parent="AmmoBoxStaticBody" index="3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AmmoBoxStaticBody/Area3D" index="0"]
+shape = SubResource("SphereShape3D_8l1cn")
+
+[node name="cuboid" parent="Node2" index="0"]
+material_overlay = SubResource("ShaderMaterial_cj1j4")
+
+[node name="cuboid2" parent="Node2" index="1"]
+material_overlay = SubResource("ShaderMaterial_cj1j4")
+
+[node name="cuboid3" parent="Node2" index="2"]
+material_overlay = SubResource("ShaderMaterial_cj1j4")
+
+[node name="cuboid4" parent="Node2/bone2" index="0"]
+material_overlay = SubResource("ShaderMaterial_cj1j4")
+
+[node name="cylinder" parent="Node2/bone2" index="1"]
+material_overlay = SubResource("ShaderMaterial_cj1j4")
+
+[node name="cuboid5" parent="Node2/bone2" index="2"]
+material_overlay = SubResource("ShaderMaterial_cj1j4")
+
+[node name="InteractComponent" parent="." index="2" instance=ExtResource("5_xcnyu")]
+script = ExtResource("6_vckro")
+
+[node name="LabelComponent" parent="." index="3" node_paths=PackedStringArray("Interact") instance=ExtResource("5_t8tk1")]
+LabelName = "Ammo Box"
+LabelType = 1
+Interact = NodePath("../InteractComponent")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LabelComponent" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.725281, 0)
+shape = SubResource("BoxShape3D_xmgau")
+
+[connection signal="body_entered" from="AmmoBoxStaticBody/Area3D" to="AmmoBoxStaticBody" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="AmmoBoxStaticBody/Area3D" to="AmmoBoxStaticBody" method="_on_area_3d_body_exited"]

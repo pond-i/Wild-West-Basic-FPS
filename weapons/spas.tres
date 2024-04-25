@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="Weapon" load_steps=4 format=3 uid="uid://db1rrfvfv46y8"]
+
+[ext_resource type="Script" path="res://scripts/objects/weapon.gd" id="1_20di4"]
+[ext_resource type="Texture2D" uid="uid://2jld33y6h5pq" path="res://sprites/crosshair.png" id="1_o6wfx"]
+[ext_resource type="PackedScene" uid="uid://cke6pqpt0d0fa" path="res://models/hand_models/spas_hand.tscn" id="2_i6f2e"]
+
+[resource]
+script = ExtResource("1_20di4")
+object_number = 5
+object_name = "Tactical Shotgun"
+interact = false
+pick_up = false
+weapon_name = "Tactical Shotgun"
+model = ExtResource("2_i6f2e")
+position = Vector3(-0.3, 0, -0.8)
+rotation = Vector3(0, 0, 0)
+muzzle_position = Vector3(0.4, 1, 2)
+viewable_muzzle = true
+melee = false
+limited_rounds = true
+clip_ammo = 4
+total_ammo = 32
+read_only_max_ammo = 4
+animation_speed = 1.0
+reload_speed = 1.0
+reload_cooldown = 1.0
+cooldown = 1.0
+max_distance = 55
+damage = 55.0
+spread = 0.0
+shot_count = 1
+knockback = 55
+crosshair = ExtResource("1_o6wfx")

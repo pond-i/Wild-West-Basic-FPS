@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="VendingMachine" load_steps=3 format=3 uid="uid://dw53r65ku31qq"]
+
+[ext_resource type="PackedScene" uid="uid://cwbrb21rhtlec" path="res://objects/static_objects/vending_6.tscn" id="1_3v3pg"]
+[ext_resource type="Script" path="res://scripts/objects/vending_machine.gd" id="1_k8rqd"]
+
+[resource]
+script = ExtResource("1_k8rqd")
+object_name = "Beard n' Bark Brew"
+model = ExtResource("1_3v3pg")
+sound_shoot = ""
+interact_sound = ""

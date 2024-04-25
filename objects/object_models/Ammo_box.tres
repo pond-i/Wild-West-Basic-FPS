@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemObject" load_steps=2 format=3 uid="uid://d3kph4tgv8jye"]
+
+[ext_resource type="Script" path="res://scripts/objects/item_object.gd" id="1_5n2u0"]
+
+[resource]
+script = ExtResource("1_5n2u0")
+object_number = 0
+object_name = "Ammo Box"
+interact = true
+pick_up = false
+object_static = false
+sound_shoot = ""
+interact_sound = "sounds/ammo_load.wav"

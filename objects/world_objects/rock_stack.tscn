@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1hyk8ld1qexj"]
+
+[ext_resource type="PackedScene" uid="uid://cjsi04n4vg5uq" path="res://objects/world_objects/rock.tscn" id="1_jdm4q"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1.78646, 0, 0, 0, 7.2066, 0, 0, 0, 4.24763, 0, 0, 0)
+
+[node name="Rock" parent="." instance=ExtResource("1_jdm4q")]
+transform = Transform3D(1.76666, 0, 0, 0, 1, 0, 0, 0, 1, -0.0590584, 0, 0.571325)
+
+[node name="Rock4" parent="." instance=ExtResource("1_jdm4q")]
+transform = Transform3D(1.76666, 0, 0, 0, 1, 0, 0, 0, 1, -0.0590584, 0, -1.80677)
+
+[node name="Rock5" parent="." instance=ExtResource("1_jdm4q")]
+transform = Transform3D(1.76666, 0, 0, 0, 1, 0, 0, 0, 1, 0.551409, 0, 3.36768)
+
+[node name="Rock2" parent="." instance=ExtResource("1_jdm4q")]
+transform = Transform3D(-1.73924, 0, 0.146725, 0, 0.610008, 0, -0.32662, 0, -0.781303, 0.778284, 3.30834e-08, -0.839518)
+
+[node name="Rock3" parent="." instance=ExtResource("1_jdm4q")]
+transform = Transform3D(-2.53306, 0, -0.164398, 0, 2.47717, 0, 0.117861, 0, -3.53322, -1.12408, -0.266208, 2.12777)
+
+[node name="Rock6" parent="." instance=ExtResource("1_jdm4q")]
+transform = Transform3D(-2.51322, 0, -0.228067, 0, 4.03166, 0, 0.116938, 0, -4.90161, -1.12408, -0.266208, -2.93722)
+
+[node name="Rock7" parent="." instance=ExtResource("1_jdm4q")]
+transform = Transform3D(1.76666, 0, 0, 0, 1, 0, 0, 0, 1, -0.0590584, 0, -3.98898)
+
+[node name="Rock8" parent="." instance=ExtResource("1_jdm4q")]
+transform = Transform3D(3.79573, 0, 0, 0, 1.60949, 0, 0, 0, 3.24237, -0.0590584, 0, -7.78906)
+
+[node name="Rock9" parent="." instance=ExtResource("1_jdm4q")]
+transform = Transform3D(1.76666, 0, 0, 0, 1, 0, 0, 0, 1, 0.551409, 0, -2.84415)
+
+[node name="Rock10" parent="." instance=ExtResource("1_jdm4q")]
+transform = Transform3D(-1.76773, 0, -0.0369489, 0, 0.610008, 0, 0.0822508, 0, -0.794102, 0.960049, 3.30834e-08, -4.97547)
+
+[node name="Rock11" parent="." instance=ExtResource("1_jdm4q")]
+transform = Transform3D(-2.53306, 0, -0.164398, 0, 2.47717, 0, 0.117861, 0, -3.53322, -1.12408, -0.266208, -2.00818)
+
+[node name="Rock12" parent="." instance=ExtResource("1_jdm4q")]
+transform = Transform3D(-2.53306, 0, -0.164398, 0, 2.47717, 0, 0.117861, 0, -3.53322, -1.12408, -0.266208, -7.07317)

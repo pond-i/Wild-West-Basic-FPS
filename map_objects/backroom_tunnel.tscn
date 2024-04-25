@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3l437bwc2nfg"]
+
+[ext_resource type="PackedScene" uid="uid://budu6qyswg2ds" path="res://map_objects/Backroom.glb" id="1_5ofr2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cvf37"]
+size = Vector3(2, 6.57214, 26)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lf5y2"]
+size = Vector3(26.7084, 0.247163, 25.4772)
+
+[node name="Backroom" instance=ExtResource("1_5ofr2")]
+
+[node name="bone" parent="Node2" index="1"]
+visible = false
+
+[node name="bone4" parent="Node2" index="2"]
+visible = false
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Node2/bone2" index="39"]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -11.5, -3, -13)
+collision_layer = 2049
+collision_mask = 2049
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node2/bone2/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9587, 2.80324, 0)
+shape = SubResource("BoxShape3D_cvf37")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="Node2/bone3" index="39"]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 11.5, -3, 13.8724)
+collision_layer = 2049
+collision_mask = 2049
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node2/bone3/StaticBody3D2" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.9587, 2.80324, 0)
+shape = SubResource("BoxShape3D_cvf37")
+
+[node name="StaticBody3D5" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D5" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.13804, 0.27222)
+shape = SubResource("BoxShape3D_lf5y2")

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemObject" load_steps=2 format=3 uid="uid://beth3bglwiyf2"]
+
+[ext_resource type="Script" path="res://scripts/objects/item_object.gd" id="1_rhc8b"]
+
+[resource]
+script = ExtResource("1_rhc8b")
+object_number = 5
+object_name = "Tactical Shotgun"
+interact = false
+pick_up = false
+object_static = false
+sound_shoot = ""
+interact_sound = "sounds/Spas/cock_1.mp3"

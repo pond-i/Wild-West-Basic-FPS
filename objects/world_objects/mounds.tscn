@@ -1,0 +1,64 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqif7bfuag3rw"]
+
+[ext_resource type="PackedScene" uid="uid://bvx5cvigosg0s" path="res://objects/platform_large_grass.tscn" id="1_yr4bw"]
+[ext_resource type="PackedScene" uid="uid://bxcqi1j5vykk5" path="res://objects/world_objects/cactus.tscn" id="2_kh0n0"]
+[ext_resource type="PackedScene" uid="uid://cjsi04n4vg5uq" path="res://objects/world_objects/rock.tscn" id="3_rcccv"]
+
+[node name="Mounds" type="Node3D"]
+
+[node name="platform-large-grass4" parent="." groups=["Ground"] instance=ExtResource("1_yr4bw")]
+transform = Transform3D(28.3795, 0, 0, 0, 6.61438, 0, 0, 0, 10.0169, -0.892792, -1.15741, 74.0939)
+
+[node name="platform-large-grass5" parent="." groups=["Ground"] instance=ExtResource("1_yr4bw")]
+transform = Transform3D(25.2973, 0, 0, 0, 6.61438, 0, 0, 0, 8.82857, -0.886162, 0.447011, 74.1176)
+
+[node name="platform-large-grass6" parent="." groups=["Ground"] instance=ExtResource("1_yr4bw")]
+transform = Transform3D(14.4116, 0, 0, 0, 6.61438, 0, 0, 0, 5.53887, -0.886162, 2.01508, 74.1176)
+
+[node name="platform-large-grass7" parent="." groups=["Ground"] instance=ExtResource("1_yr4bw")]
+transform = Transform3D(6.71139, 0, 0, 0, 6.61438, 0, 0, 0, 2.5768, 12.712, 3.76174, 74.1176)
+
+[node name="Catcus" parent="." instance=ExtResource("2_kh0n0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.3546, 3.7542, 65.1033)
+
+[node name="Catcus2" parent="." instance=ExtResource("2_kh0n0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.7098, 5.32227, 70.0128)
+
+[node name="Catcus3" parent="." instance=ExtResource("2_kh0n0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5285, 7.06893, 75.1625)
+
+[node name="Catcus4" parent="." instance=ExtResource("2_kh0n0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.5357, 3.7542, 66.5775)
+
+[node name="Catcus5" parent="." instance=ExtResource("2_kh0n0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.0509, 3.7542, 89.5302)
+
+[node name="Catcus6" parent="." instance=ExtResource("2_kh0n0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -61.5722, 3.7542, 93.5823)
+
+[node name="Catcus7" parent="." instance=ExtResource("2_kh0n0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.5522, 2.14978, 88.039)
+
+[node name="Rock" parent="." instance=ExtResource("3_rcccv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1427, 7.06893, 77.2785)
+
+[node name="Rock2" parent="." instance=ExtResource("3_rcccv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.311, 3.7542, 78.0503)
+
+[node name="Rock3" parent="." instance=ExtResource("3_rcccv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1749, 3.7542, 91.4844)
+
+[node name="Rock4" parent="." instance=ExtResource("3_rcccv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66.503, 2.14978, 68.8428)
+
+[node name="Rock5" parent="." instance=ExtResource("3_rcccv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.7832, 2.14977, 97.6587)
+
+[node name="Rock6" parent="." instance=ExtResource("3_rcccv")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -20.8509, 5.32227, 70.9566)
+
+[node name="Rock7" parent="." instance=ExtResource("3_rcccv")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -0.301979, 5.32227, 70.9566)
+
+[node name="Rock8" parent="." instance=ExtResource("3_rcccv")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 45.7697, 3.49165, 70.9566)

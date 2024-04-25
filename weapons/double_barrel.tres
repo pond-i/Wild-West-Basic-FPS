@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="Weapon" load_steps=4 format=3 uid="uid://cramf4h08r2ih"]
+
+[ext_resource type="Texture2D" uid="uid://2jld33y6h5pq" path="res://sprites/crosshair.png" id="1_6b70k"]
+[ext_resource type="PackedScene" uid="uid://bmmgidisq43qm" path="res://models/hand_models/Double_barrel_hand.tscn" id="1_sxm82"]
+[ext_resource type="Script" path="res://scripts/objects/weapon.gd" id="1_vukbb"]
+
+[resource]
+script = ExtResource("1_vukbb")
+object_number = 1
+object_name = "Double Barrel"
+interact = false
+pick_up = false
+weapon_name = "Double Barrel"
+model = ExtResource("1_sxm82")
+position = Vector3(-0.3, 0.5, 0.3)
+rotation = Vector3(0, 0, 0)
+muzzle_position = Vector3(0, -1, 1.5)
+viewable_muzzle = true
+melee = false
+limited_rounds = true
+clip_ammo = 2
+total_ammo = 12
+read_only_max_ammo = 2
+animation_speed = 1.0
+reload_speed = 1.2
+reload_cooldown = 2.5
+cooldown = 0.9
+max_distance = 25
+damage = 80.0
+spread = 0.5
+shot_count = 1
+knockback = 100
+crosshair = ExtResource("1_6b70k")

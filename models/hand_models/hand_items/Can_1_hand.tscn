@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cy4tue2uaiwdv"]
+
+[ext_resource type="PackedScene" uid="uid://pgu234xj7yq1" path="res://models/gbl_models/Can_1.glb" id="1_0hto6"]
+
+[node name="Can_1" instance=ExtResource("1_0hto6")]

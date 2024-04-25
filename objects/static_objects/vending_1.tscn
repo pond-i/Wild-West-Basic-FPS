@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4wjdb553gutv"]
+
+[ext_resource type="PackedScene" uid="uid://dojfsgvfje051" path="res://models/gbl_models/VendingMachine.glb" id="1_e7shm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4utao"]
+size = Vector3(2.71857, 4.44895, 2.59171)
+
+[node name="VendingMachine" instance=ExtResource("1_e7shm")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+collision_layer = 2049
+collision_mask = 2049
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.53686, -0.117527)
+shape = SubResource("BoxShape3D_4utao")

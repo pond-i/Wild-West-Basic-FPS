@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="Weapon" load_steps=4 format=3 uid="uid://dd5yaybhmwjt"]
+
+[ext_resource type="Texture2D" uid="uid://2jld33y6h5pq" path="res://sprites/crosshair.png" id="1_ghwgc"]
+[ext_resource type="PackedScene" uid="uid://cytef5rwexhfw" path="res://models/hand_models/Pistol_hand.tscn" id="2_hk64t"]
+[ext_resource type="Script" path="res://scripts/objects/weapon.gd" id="3_dofut"]
+
+[resource]
+script = ExtResource("3_dofut")
+object_number = 2
+object_name = "Glock"
+interact = false
+pick_up = false
+weapon_name = "Glock"
+model = ExtResource("2_hk64t")
+position = Vector3(0, 0, 0)
+rotation = Vector3(-0.2, 0.2, 0)
+muzzle_position = Vector3(0, -0.6, 1.5)
+viewable_muzzle = true
+melee = false
+limited_rounds = true
+clip_ammo = 5
+total_ammo = 10
+read_only_max_ammo = 5
+animation_speed = 1.0
+reload_speed = 0.8
+reload_cooldown = 1.2
+cooldown = 0.5
+max_distance = 20
+damage = 25.0
+spread = 0.0
+shot_count = 1
+knockback = 5
+crosshair = ExtResource("1_ghwgc")

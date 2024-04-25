@@ -1,0 +1,343 @@
+[gd_scene load_steps=24 format=3 uid="uid://dxvvlck8lej3f"]
+
+[ext_resource type="PackedScene" uid="uid://dle4as8baa12n" path="res://objects/world_objects/cactus_stack.tscn" id="1_tjndw"]
+[ext_resource type="PackedScene" uid="uid://bi50pwpvbft32" path="res://models/floor_models/Double_barrel_floor.tscn" id="2_1fmvo"]
+[ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_elriq"]
+[ext_resource type="Script" path="res://scripts/hud.gd" id="3_s8mkj"]
+[ext_resource type="FontFile" uid="uid://biqtga8moh7ah" path="res://fonts/lilita_one_regular.ttf" id="3_w27de"]
+[ext_resource type="LabelSettings" uid="uid://d4ikpnkrymsrr" path="res://fonts/Font.tres" id="4_f2esw"]
+[ext_resource type="Script" path="res://scripts/Log.gd" id="5_cmigf"]
+[ext_resource type="PackedScene" uid="uid://bvx5cvigosg0s" path="res://objects/platform_large_grass.tscn" id="7_wggef"]
+[ext_resource type="PackedScene" uid="uid://d2g78tpqbyf5g" path="res://objects/enemy.tscn" id="8_7ty2f"]
+[ext_resource type="PackedScene" uid="uid://rbptrs3sq74f" path="res://objects/buildings/shop.tscn" id="11_qtdn0"]
+[ext_resource type="PackedScene" uid="uid://cyl5jug780ddx" path="res://models/enemies/FiringTarget.tscn" id="12_noa6c"]
+[ext_resource type="PackedScene" uid="uid://dqif7bfuag3rw" path="res://objects/world_objects/mounds.tscn" id="13_8a7km"]
+[ext_resource type="Texture2D" uid="uid://baqmemjrvj036" path="res://sprites/MeanScgee.png" id="13_abr00"]
+[ext_resource type="PackedScene" uid="uid://d13vrhxth1iwp" path="res://objects/world_objects/mountain.tscn" id="13_p2do4"]
+[ext_resource type="PackedScene" uid="uid://dok4tajxvfiib" path="res://models/floor_models/Double_barrel_super_floor.tscn" id="16_vn5rr"]
+[ext_resource type="Texture2D" uid="uid://2jld33y6h5pq" path="res://sprites/crosshair.png" id="17_aapex"]
+[ext_resource type="PackedScene" uid="uid://y3mqo8hkt45t" path="res://models/floor_models/Glock_floor.tscn" id="17_fu0jc"]
+[ext_resource type="PackedScene" uid="uid://cn6a8tocnwl2a" path="res://models/floor_models/spas_floor.tscn" id="18_lbvjp"]
+[ext_resource type="PackedScene" uid="uid://d1hyk8ld1qexj" path="res://objects/world_objects/rock_stack.tscn" id="19_it8ym"]
+
+[sub_resource type="Theme" id="Theme_nu1mx"]
+default_base_scale = 1.0
+default_font = ExtResource("3_w27de")
+default_font_size = 16
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3ucet"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_t4re2"]
+sky_material = SubResource("ProceduralSkyMaterial_3ucet")
+
+[sub_resource type="Environment" id="Environment_lv6b3"]
+background_mode = 2
+sky = SubResource("Sky_t4re2")
+tonemap_mode = 2
+glow_enabled = true
+fog_enabled = true
+fog_light_color = Color(0.313726, 0.521569, 0.729412, 1)
+
+[node name="Main" type="Node3D"]
+
+[node name="Decoration" type="Node" parent="."]
+
+[node name="cactus" type="Node" parent="Decoration"]
+
+[node name="CactusStack" parent="Decoration/cactus" instance=ExtResource("1_tjndw")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -59.358, 0.837106, 0)
+
+[node name="CactusStack6" parent="Decoration/cactus" instance=ExtResource("1_tjndw")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -3.52715, 0.837106, -2.3497)
+
+[node name="CactusStack7" parent="Decoration/cactus" instance=ExtResource("1_tjndw")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -19.5554, 0.837106, -52.3988)
+
+[node name="CactusStack11" parent="Decoration/cactus" instance=ExtResource("1_tjndw")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 45.823, 0.837106, 0.178162)
+
+[node name="CactusStack15" parent="Decoration/cactus" instance=ExtResource("1_tjndw")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 63.7641, 0.837106, -46.3852)
+
+[node name="CactusStack2" parent="Decoration/cactus" instance=ExtResource("1_tjndw")]
+transform = Transform3D(-0.793914, 0, -0.0984932, 0, 0.8, 0, 0.0984932, 0, -0.793914, 67.2379, 0.837106, 48.3024)
+
+[node name="CactusStack8" parent="Decoration/cactus" instance=ExtResource("1_tjndw")]
+transform = Transform3D(-0.793914, 0, -0.0984932, 0, 0.8, 0, 0.0984932, 0, -0.793914, 12.1211, 1.5447, 57.5079)
+
+[node name="CactusStack9" parent="Decoration/cactus" instance=ExtResource("1_tjndw")]
+transform = Transform3D(-0.793914, 0, -0.0984932, 0, 0.8, 0, 0.0984932, 0, -0.793914, 34.1893, 0.837106, 105.203)
+
+[node name="CactusStack12" parent="Decoration/cactus" instance=ExtResource("1_tjndw")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -37.1648, 0.837106, 61.0751)
+
+[node name="CactusStack13" parent="Decoration/cactus" instance=ExtResource("1_tjndw")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 92.9256, 0.837106, 61.0751)
+
+[node name="CactusStack14" parent="Decoration/cactus" instance=ExtResource("1_tjndw")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 92.9256, 0.837106, -103.826)
+
+[node name="CactusStack17" parent="Decoration/cactus" instance=ExtResource("1_tjndw")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 30.1448, 0.837106, -103.826)
+
+[node name="CactusStack18" parent="Decoration/cactus" instance=ExtResource("1_tjndw")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -114.671, 0.837106, -103.826)
+
+[node name="CactusStack19" parent="Decoration/cactus" instance=ExtResource("1_tjndw")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -48.1237, 0.837106, -103.826)
+
+[node name="CactusStack20" parent="Decoration/cactus" instance=ExtResource("1_tjndw")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -108.767, 0.837106, 41.5192)
+
+[node name="CactusStack21" parent="Decoration/cactus" instance=ExtResource("1_tjndw")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 115.198, 0.837106, 41.5192)
+
+[node name="CactusStack22" parent="Decoration/cactus" instance=ExtResource("1_tjndw")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 115.198, 0.837106, -121.115)
+
+[node name="CactusStack23" parent="Decoration/cactus" instance=ExtResource("1_tjndw")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 115.198, 0.837106, -121.115)
+
+[node name="CactusStack16" parent="Decoration/cactus" instance=ExtResource("1_tjndw")]
+transform = Transform3D(-0.793914, 0, -0.0984932, 0, 0.8, 0, 0.0984932, 0, -0.793914, -49.2368, 0.837106, 109.493)
+
+[node name="items" type="Node" parent="Decoration"]
+
+[node name="DoubleBarrel" parent="Decoration/items" instance=ExtResource("2_1fmvo")]
+transform = Transform3D(-0.976998, -0.206645, -0.0526498, 0.00854514, 0.20876, -0.977929, 0.213075, -0.955886, -0.202193, -3.98533, 2.51963, 19.7602)
+
+[node name="Player" parent="." node_paths=PackedStringArray("crosshair") instance=ExtResource("2_elriq")]
+unique_name_in_owner = true
+transform = Transform3D(0.989972, 0, 0.141264, 0, 1, 0, -0.141264, 0, 0.989972, -7.26652, 2.47413, 14.3532)
+crosshair = NodePath("../HUD/Crosshair")
+
+[node name="HUD" type="CanvasLayer" parent="."]
+script = ExtResource("3_s8mkj")
+
+[node name="Crosshair" type="TextureRect" parent="HUD"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.35, 0.35)
+pivot_offset = Vector2(64, 64)
+texture = ExtResource("17_aapex")
+metadata/_edit_use_anchors_ = true
+
+[node name="Health" type="Label" parent="HUD"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 28.0
+offset_top = 670.0
+offset_right = -1162.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+text = "100%"
+label_settings = ExtResource("4_f2esw")
+vertical_alignment = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="WeaponInfo" type="Node" parent="HUD"]
+
+[node name="Ammo" type="Label" parent="HUD/WeaponInfo"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1167.0
+offset_top = 670.0
+offset_right = -23.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+label_settings = ExtResource("4_f2esw")
+vertical_alignment = 2
+
+[node name="AmmoTotal" type="Label" parent="HUD/WeaponInfo"]
+modulate = Color(1, 1, 1, 0.396078)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1223.0
+offset_top = 670.0
+offset_right = 33.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+label_settings = ExtResource("4_f2esw")
+vertical_alignment = 2
+
+[node name="WeaponLabel" type="Label" parent="HUD/WeaponInfo"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 964.0
+offset_top = 670.0
+offset_right = -226.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+text = "10"
+label_settings = ExtResource("4_f2esw")
+vertical_alignment = 2
+
+[node name="DebugLabel" type="RichTextLabel" parent="HUD"]
+unique_name_in_owner = true
+anchors_preset = -1
+anchor_right = 1.04844
+anchor_bottom = 0.925
+offset_left = 20.0
+offset_top = 13.0
+offset_right = -832.0
+offset_bottom = -462.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = SubResource("Theme_nu1mx")
+scroll_following = true
+script = ExtResource("5_cmigf")
+metadata/_edit_use_anchors_ = true
+
+[node name="InteractionMenu" type="Label" parent="HUD"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 350.0
+offset_top = 670.0
+offset_right = -357.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+label_settings = ExtResource("4_f2esw")
+vertical_alignment = 2
+
+[node name="Enemies" type="Node" parent="."]
+
+[node name="enemy-flying" parent="Enemies" node_paths=PackedStringArray("player") instance=ExtResource("8_7ty2f")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.17324, 3.2241, 18.1774)
+player = NodePath("../../Player")
+attack = false
+
+[node name="MeanScGee" parent="Enemies" instance=ExtResource("12_noa6c")]
+transform = Transform3D(1.5, 0, 0, 0, 1.49977, -0.026231, 0, 0.026231, 1.49977, 4.60091, 6.39479, 75.0593)
+image = ExtResource("13_abr00")
+
+[node name="Pooch2" parent="Enemies" instance=ExtResource("12_noa6c")]
+transform = Transform3D(0.358614, 0, -1.4565, 0, 1.5, 0, 1.4565, 0, 0.358614, 8.65679, 1.04763, 14.2971)
+moving = true
+
+[node name="Pooch4" parent="Enemies" instance=ExtResource("12_noa6c")]
+transform = Transform3D(0.358614, 0, -1.4565, 0, 1.5, 0, 1.4565, 0, 0.358614, 9.00885, 1.04763, 15.727)
+moving = true
+
+[node name="Pooch3" parent="Enemies" instance=ExtResource("12_noa6c")]
+transform = Transform3D(0.358614, 0, -1.4565, 0, 1.5, 0, 1.4565, 0, 0.358614, 10.0018, 1.04763, 19.5092)
+moving = true
+
+[node name="Pooch5" parent="Enemies" instance=ExtResource("12_noa6c")]
+transform = Transform3D(0.358614, 0, -1.4565, 0, 1.5, 0, 1.4565, 0, 0.358614, 10.3167, 1.04763, 20.7884)
+moving = true
+
+[node name="Level" type="Node" parent="."]
+
+[node name="platform-large-grass3" parent="Level" groups=["Ground"] instance=ExtResource("7_wggef")]
+transform = Transform3D(148.134, 0, 0, 0, 2, 0, 0, 0, 127.681, -0.0470715, 0, 0)
+
+[node name="Levels" type="Node" parent="Level"]
+
+[node name="Mounds" parent="Level/Levels" instance=ExtResource("13_8a7km")]
+
+[node name="Mounds3" parent="Level/Levels" instance=ExtResource("13_8a7km")]
+transform = Transform3D(-0.0477864, 0, 0.998858, 0, 1, 0, -0.998858, 0, -0.0477864, -144.99, 0, 6.71057)
+
+[node name="Border" type="Node3D" parent="Level"]
+transform = Transform3D(-7.80886e-08, 0, 6.47055, 0, 6.07346, 0, -1.78646, 0, -2.82837e-07, 102.149, 1, 134.511)
+
+[node name="Mountains" parent="Level/Border" instance=ExtResource("13_p2do4")]
+transform = Transform3D(8.34696e-08, 0, 1.35744, 0, 0.187228, 0, -0.175738, 0, 4.9146e-08, 43.5784, -2.90767, -49.1373)
+
+[node name="Mountains3" parent="Level/Border" instance=ExtResource("13_p2do4")]
+transform = Transform3D(-0.402369, 0, 1.33157e-07, 0, 0.118354, 0, -9.71182e-09, 0, -0.420527, -77.6809, -0.973462, -4.1035)
+
+[node name="Mountains5" parent="Level/Border" instance=ExtResource("13_p2do4")]
+transform = Transform3D(-0.559766, 0, 1.03466e-07, 0, 0.164651, 0, -1.35109e-08, 0, -0.326757, 228.915, -2.43766, -8.49804)
+
+[node name="Mountains4" parent="Level/Border" instance=ExtResource("13_p2do4")]
+transform = Transform3D(-1.81348e-08, 0, -1.57049, 0, 0.122032, 0, 0.114543, 0, -1.89531e-08, 113.754, -1.8978, 17.7583)
+
+[node name="Mountains2" parent="Level/Border" instance=ExtResource("13_p2do4")]
+transform = Transform3D(-2.44682e-08, 0, 0.559766, 0, 0.164651, 0, -0.154546, 0, -6.75544e-09, 2.60976, -2.92494, -44.715)
+
+[node name="Rockstack1" parent="Level/Border" instance=ExtResource("19_it8ym")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="Rockstack2" parent="Level/Border" instance=ExtResource("19_it8ym")]
+transform = Transform3D(1, 0, 1.42109e-14, 0, 1, 0, 8.88178e-16, 0, 1, 0, 0, -12.4135)
+
+[node name="Rockstack6" parent="Level/Border" instance=ExtResource("19_it8ym")]
+transform = Transform3D(1, 0, 1.42109e-14, 0, 1, 0, 8.88178e-16, 0, 1, 152.151, 0, 1.90735e-06)
+
+[node name="Rockstack7" parent="Level/Border" instance=ExtResource("19_it8ym")]
+transform = Transform3D(1, 0, 1.42109e-14, 0, 1, 0, 3.55271e-15, 0, 1, 152.151, 0, -12.4135)
+
+[node name="Rockstack8" parent="Level/Border" instance=ExtResource("19_it8ym")]
+transform = Transform3D(1, 0, 1.42109e-14, 0, 0.999999, 0, 7.10543e-15, 0, 1, 152.151, 0, -23.7073)
+
+[node name="Rockstack3" parent="Level/Border" instance=ExtResource("19_it8ym")]
+transform = Transform3D(1, 0, 1.42109e-14, 0, 1, 0, 1.77636e-15, 0, 1, 0, 0, -24.6667)
+
+[node name="Rockstack4" parent="Level/Border" instance=ExtResource("19_it8ym")]
+transform = Transform3D(0.0175794, 0, -7.22028, 0, 0.999999, 0, 0.562514, 0, 0.225645, 30.2042, 0.272161, -34.5058)
+
+[node name="Rockstack5" parent="Level/Border" instance=ExtResource("19_it8ym")]
+transform = Transform3D(-0.0211527, 0, -7.2187, 0, 0.999999, 0, 0.562391, 0, -0.271511, 117.146, 0.272161, -35.3427)
+
+[node name="Rockstack9" parent="Level/Border" instance=ExtResource("19_it8ym")]
+transform = Transform3D(-0.0134065, 0, -7.22175, 0, 0.999999, 0, 0.562629, 0, -0.172082, 25.4789, 0.272161, 5.62577)
+
+[node name="Rockstack10" parent="Level/Border" instance=ExtResource("19_it8ym")]
+transform = Transform3D(0.00505851, 0, -7.22351, 0, 0.999999, 0, 0.562766, 0, 0.0649297, 117.146, 0.272161, 6.46626)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_lv6b3")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 10.3706, 0)
+
+[node name="Shop" parent="." instance=ExtResource("11_qtdn0")]
+transform = Transform3D(-2.5, 0, -3.77489e-07, 0, 2.5, 0, 3.77489e-07, 0, -2.5, -5, 1.01, 25.006)
+
+[node name="DoubleBarrel" parent="." instance=ExtResource("2_1fmvo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.04071, 1, 15.8262)
+
+[node name="DoubleBarrelSuper" parent="." instance=ExtResource("16_vn5rr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.68555, 1, 15.798)
+
+[node name="Pistol" parent="." instance=ExtResource("17_fu0jc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.45169, 1, 15.7496)
+
+[node name="Spas" parent="." instance=ExtResource("18_lbvjp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.61302, 1, 15.7634)
+
+[connection signal="health_updated" from="Player" to="HUD" method="_on_health_updated"]

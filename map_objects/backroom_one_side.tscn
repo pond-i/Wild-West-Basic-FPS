@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6l5ruxjsv5tx"]
+
+[ext_resource type="PackedScene" uid="uid://budu6qyswg2ds" path="res://map_objects/Backroom.glb" id="1_v1rdi"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cvf37"]
+size = Vector3(2.57993, 6.57214, 26.0548)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lf5y2"]
+size = Vector3(26.7084, 0.247163, 25.4772)
+
+[node name="Backroom" instance=ExtResource("1_v1rdi")]
+
+[node name="Node2_bone3_StaticBody3D2#CollisionShape3D" type="CollisionShape3D" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6871, 2.80324, 0)
+shape = SubResource("BoxShape3D_cvf37")
+
+[node name="StaticBody3D5" type="StaticBody3D" parent="." index="1"]
+collision_layer = 2049
+collision_mask = 2049
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D5" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.13804, 0.27222)
+shape = SubResource("BoxShape3D_lf5y2")
+
+[node name="Node2_bone2_StaticBody3D#CollisionShape3D" type="CollisionShape3D" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.2243, 2.80324, 0)
+shape = SubResource("BoxShape3D_cvf37")
+
+[node name="Node2_bone4_StaticBody3D4#CollisionShape3D" type="CollisionShape3D" parent="." index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.1061, 2.80324, -0.225153)
+shape = SubResource("BoxShape3D_cvf37")
+
+[node name="Node2_bone4#StaticBody3D4" type="StaticBody3D" parent="." index="5"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.000591278, 0, 22.9583)
+collision_layer = 2049
+collision_mask = 2049
+
+[node name="Node2_bone2#StaticBody3D" type="StaticBody3D" parent="." index="6"]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -11.5, -3, -13)
+collision_layer = 2049
+collision_mask = 2049
+
+[node name="Node2_bone3#StaticBody3D2" type="StaticBody3D" parent="." index="7"]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 11.5, -3, 12.8935)
+collision_layer = 2049
+collision_mask = 2049

@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxcqi1j5vykk5"]
+
+[ext_resource type="PackedScene" uid="uid://c5pk2sdf3ftjc" path="res://models/gbl_models/Cactus.glb" id="1_ppk6j"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_0iwy6"]
+data = PackedVector3Array(0.1875, 0, 0.5, -0.1875, 0, -2.25, 0.1875, 0, -2.25, 0.1875, 0, 0.5, -0.1875, 0, 0.5, -0.1875, 0, -2.25)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_p3tgp"]
+data = PackedVector3Array(0, 0, -0.125, -0.25, 0, -1.25, 0, 0, -1.25, 0, 0, -0.125, -0.25, 0, -0.125, -0.25, 0, -1.25)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_wxtiw"]
+data = PackedVector3Array(0.1875, 0, -0.125, -0.0625, 0, -1, 0.1875, 0, -1, 0.1875, 0, -0.125, -0.0625, 0, -0.125, -0.0625, 0, -1)
+
+[node name="Catcus" instance=ExtResource("1_ppk6j")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Node/plane" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/plane/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_0iwy6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Node/plane3" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/plane3/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_p3tgp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Node/plane4" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/plane4/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_wxtiw")

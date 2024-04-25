@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=3 uid="uid://c6dhk0au44h6g"]
+
+[ext_resource type="PackedScene" uid="uid://pgu234xj7yq1" path="res://models/gbl_models/Can_1.glb" id="1_b33x5"]
+[ext_resource type="Script" path="res://scripts/Items/can_1_floor.gd" id="1_j2q4j"]
+[ext_resource type="Resource" uid="uid://nog7uhegt5ol" path="res://objects/object_models/vending_machines/cans/can_1.tres" id="2_5jgku"]
+[ext_resource type="PackedScene" uid="uid://dlo81jj3dr15v" path="res://composition_components/label_component.tscn" id="2_efvpl"]
+[ext_resource type="PackedScene" uid="uid://coomf3phgbb0n" path="res://composition_components/pick_up_component.tscn" id="3_vd7jp"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_4ksh4"]
+height = 0.200394
+radius = 0.0992997
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_rqv86"]
+height = 0.251278
+radius = 0.113267
+
+[node name="Can_1" type="RigidBody3D"]
+collision_layer = 2049
+collision_mask = 2049
+mass = 9.27
+script = ExtResource("1_j2q4j")
+export_object = ExtResource("2_5jgku")
+
+[node name="Can_1" parent="." instance=ExtResource("1_b33x5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." groups=["canMove"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.537185, 0)
+shape = SubResource("CylinderShape3D_4ksh4")
+
+[node name="LabelComponent" parent="." node_paths=PackedStringArray("PickUp") groups=["canMove"] instance=ExtResource("2_efvpl")]
+LabelName = "P-bear POP"
+LabelType = 2
+PickUp = NodePath("../PickUpComponent")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LabelComponent" groups=["canMove"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.584112, 0)
+shape = SubResource("CylinderShape3D_rqv86")
+
+[node name="PickUpComponent" parent="." instance=ExtResource("3_vd7jp")]

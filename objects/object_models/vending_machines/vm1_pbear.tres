@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="VendingMachine" load_steps=4 format=3 uid="uid://mlosa8ivdgm4"]
+
+[ext_resource type="PackedScene" uid="uid://c4wjdb553gutv" path="res://objects/static_objects/vending_1.tscn" id="1_lqxca"]
+[ext_resource type="Script" path="res://scripts/objects/vending_machine.gd" id="1_r6lbb"]
+[ext_resource type="PackedScene" uid="uid://c6dhk0au44h6g" path="res://models/floor_models/floor_items/Can_1.tscn" id="2_nrbjx"]
+
+[resource]
+script = ExtResource("1_r6lbb")
+object_name = "P-bear pop"
+model = ExtResource("1_lqxca")
+output = ExtResource("2_nrbjx")
+sound_shoot = ""
+interact_sound = ""

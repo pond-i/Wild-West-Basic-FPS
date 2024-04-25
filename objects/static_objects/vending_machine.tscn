@@ -1,0 +1,80 @@
+[gd_scene load_steps=10 format=3 uid="uid://dc0uxoyoit2t"]
+
+[ext_resource type="PackedScene" uid="uid://dojfsgvfje051" path="res://models/gbl_models/VendingMachine.glb" id="1_ahsgx"]
+[ext_resource type="PackedScene" uid="uid://dlo81jj3dr15v" path="res://composition_components/label_component.tscn" id="2_0k6oo"]
+[ext_resource type="Script" path="res://scripts/Items/vending_machine.gd" id="2_ax50p"]
+[ext_resource type="Resource" uid="uid://dvvjpdoqrphld" path="res://objects/object_models/Vending_Machine.tres" id="4_ih8g5"]
+[ext_resource type="PackedScene" uid="uid://bxosq6aq3obnt" path="res://composition_components/interact_component.tscn" id="4_k5bis"]
+[ext_resource type="PackedScene" uid="uid://btemx2hj56h3t" path="res://objects/static_objects/button.tscn" id="7_tc5wo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e24hd"]
+texture_filter = 0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n5e7s"]
+size = Vector3(2.71857, 4.44895, 2.59171)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yo66r"]
+size = Vector3(0.513096, 0.277054, 0.255417)
+
+[node name="VendingMachine2" instance=ExtResource("1_ahsgx")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0)
+
+[node name="cuboid" parent="Node2" index="0"]
+material_override = SubResource("StandardMaterial3D_e24hd")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+collision_layer = 2049
+collision_mask = 2049
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.53686, -0.117527)
+shape = SubResource("BoxShape3D_n5e7s")
+
+[node name="InteractComponent" parent="." index="2" instance=ExtResource("4_k5bis")]
+script = ExtResource("2_ax50p")
+VendingMachineType = 0
+model = ExtResource("4_ih8g5")
+
+[node name="LabelComponent" parent="." index="3" instance=ExtResource("2_0k6oo")]
+LabelType = 1
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LabelComponent" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.932585, 3.6755, -1.29626)
+shape = SubResource("BoxShape3D_yo66r")
+
+[node name="Button" parent="." index="4" instance=ExtResource("7_tc5wo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.920519, 3.6443, -1.34)
+ButtonName = "Vending Machine"
+
+[node name="Button2" parent="." index="5" instance=ExtResource("7_tc5wo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.920519, 3.3443, -1.34)
+ButtonName = "Vending Machine"
+
+[node name="Button3" parent="." index="6" instance=ExtResource("7_tc5wo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.920519, 3.0443, -1.34)
+ButtonName = "Vending Machine"
+
+[node name="Button4" parent="." index="7" instance=ExtResource("7_tc5wo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.920519, 2.7443, -1.34)
+ButtonName = "Vending Machine"
+
+[node name="Button5" parent="." index="8" instance=ExtResource("7_tc5wo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.920519, 2.4443, -1.34)
+ButtonName = "Vending Machine"
+
+[node name="Button6" parent="." index="9" instance=ExtResource("7_tc5wo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.920519, 2.1443, -1.34)
+ButtonName = "Vending Machine"
+
+[node name="OutputMarker" type="Marker3D" parent="." index="10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.237737, 0.566955, -1.73834)
+
+[node name="OutputDirection" type="Marker3D" parent="." index="11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.237737, 0.37839, -2.60856)
+
+[connection signal="ButtonPressedParent" from="Button" to="InteractComponent" method="_on_button_button_pressed_parent" flags=18]
+[connection signal="ButtonPressedParent" from="Button2" to="InteractComponent" method="_on_button_button_pressed_parent" flags=18]
+[connection signal="ButtonPressedParent" from="Button3" to="InteractComponent" method="_on_button_button_pressed_parent" flags=18]
+[connection signal="ButtonPressedParent" from="Button4" to="InteractComponent" method="_on_button_button_pressed_parent" flags=18]
+[connection signal="ButtonPressedParent" from="Button5" to="InteractComponent" method="_on_button_button_pressed_parent" flags=18]
+[connection signal="ButtonPressedParent" from="Button6" to="InteractComponent" method="_on_button_button_pressed_parent" flags=18]

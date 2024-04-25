@@ -1,0 +1,86 @@
+[gd_scene load_steps=3 format=3 uid="uid://dle4as8baa12n"]
+
+[ext_resource type="PackedScene" uid="uid://bxcqi1j5vykk5" path="res://objects/world_objects/cactus.tscn" id="1_chpjp"]
+[ext_resource type="PackedScene" uid="uid://cjsi04n4vg5uq" path="res://objects/world_objects/rock.tscn" id="2_gymid"]
+
+[node name="CactusStack" type="Node3D"]
+
+[node name="Catcus" parent="." instance=ExtResource("1_chpjp")]
+
+[node name="Catcus2" parent="." instance=ExtResource("1_chpjp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.38409, 0, 0)
+
+[node name="Catcus3" parent="." instance=ExtResource("1_chpjp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5181, 0, -7.22285)
+
+[node name="Catcus4" parent="." instance=ExtResource("1_chpjp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.96604, 0, -7.22285)
+
+[node name="Catcus5" parent="." instance=ExtResource("1_chpjp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.8897, 0, 6.01517)
+
+[node name="Catcus6" parent="." instance=ExtResource("1_chpjp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.36891, 0, 12.6352)
+
+[node name="Catcus7" parent="." instance=ExtResource("1_chpjp")]
+transform = Transform3D(0.804448, 0, 0.594023, 0, 1, 0, -0.594023, 0, 0.804448, 12.5476, 0, 12.6352)
+
+[node name="Catcus8" parent="." instance=ExtResource("1_chpjp")]
+transform = Transform3D(0.804448, 0, 0.594023, 0, 1, 0, -0.594023, 0, 0.804448, 12.5476, 0, -12.7702)
+
+[node name="Catcus9" parent="." instance=ExtResource("1_chpjp")]
+transform = Transform3D(0.677826, 0, -0.735222, 0, 1, 0, 0.735222, 0, 0.677826, -25.668, 0, -12.7702)
+
+[node name="Catcus10" parent="." instance=ExtResource("1_chpjp")]
+transform = Transform3D(0.907286, 0, 0.420513, 0, 1, 0, -0.420513, 0, 0.907286, -25.668, 0, 15.8592)
+
+[node name="Catcus11" parent="." instance=ExtResource("1_chpjp")]
+transform = Transform3D(0.907286, 0, 0.420513, 0, 1, 0, -0.420513, 0, 0.907286, 29.8285, 0, 15.8592)
+
+[node name="Rocks" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+
+[node name="Rock" parent="Rocks" instance=ExtResource("2_gymid")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 2.59273)
+
+[node name="Rock13" parent="Rocks" instance=ExtResource("2_gymid")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 127.73, 0, -101.595)
+
+[node name="Rock14" parent="Rocks" instance=ExtResource("2_gymid")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -82.6422, 0, -88.3897)
+
+[node name="Rock17" parent="Rocks" instance=ExtResource("2_gymid")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 184.644, 0, 91.6855)
+
+[node name="Rock18" parent="Rocks" instance=ExtResource("2_gymid")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 184.644, 0, 7.32857)
+
+[node name="Rock19" parent="Rocks" instance=ExtResource("2_gymid")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 184.644, 0, 7.32857)
+
+[node name="Rock2" parent="Rocks" instance=ExtResource("2_gymid")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 56.0704, 0, 2.59273)
+
+[node name="Rock3" parent="Rocks" instance=ExtResource("2_gymid")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 56.0704, 0, -63.7034)
+
+[node name="Rock4" parent="Rocks" instance=ExtResource("2_gymid")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -53.7108, 0, -63.7034)
+
+[node name="Rock5" parent="Rocks" instance=ExtResource("2_gymid")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -53.7108, 0, 7.9697)
+
+[node name="Rock6" parent="Rocks" instance=ExtResource("2_gymid")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 101.706, 0, 7.9697)
+
+[node name="Rock7" parent="Rocks" instance=ExtResource("2_gymid")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 101.706, 0, 75.9957)
+
+[node name="Rock8" parent="Rocks" instance=ExtResource("2_gymid")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -101.977, 0, 147.507)
+
+[node name="Rock9" parent="Rocks" instance=ExtResource("2_gymid")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 291.297, 0, 147.507)
+
+[node name="Rock10" parent="Rocks" instance=ExtResource("2_gymid")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 291.297, 0, 147.507)

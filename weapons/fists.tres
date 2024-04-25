@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="Weapon" load_steps=4 format=3 uid="uid://b8jws10ql6r5u"]
+
+[ext_resource type="Texture2D" uid="uid://2jld33y6h5pq" path="res://sprites/crosshair.png" id="1_7mvs5"]
+[ext_resource type="Script" path="res://scripts/objects/weapon.gd" id="1_uveux"]
+[ext_resource type="PackedScene" uid="uid://b1o1nfwxab2el" path="res://models/hand_models/Paws_hand.tscn" id="2_1vw2a"]
+
+[resource]
+script = ExtResource("1_uveux")
+object_number = 0
+object_name = "Paws"
+interact = false
+pick_up = false
+weapon_name = "Paws"
+model = ExtResource("2_1vw2a")
+position = Vector3(0, 0, 0)
+rotation = Vector3(35, 0, 0)
+muzzle_position = Vector3(0, 0, 0)
+viewable_muzzle = false
+melee = true
+limited_rounds = false
+clip_ammo = 0
+total_ammo = 0
+read_only_max_ammo = 0
+animation_speed = 0.0
+reload_speed = 0.0
+reload_cooldown = 0.0
+cooldown = 0.1
+max_distance = 10
+damage = 25.0
+spread = 0.0
+shot_count = 1
+knockback = 20
+crosshair = ExtResource("1_7mvs5")

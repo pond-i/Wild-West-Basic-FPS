@@ -1,0 +1,86 @@
+[gd_scene load_steps=10 format=3 uid="uid://cyl5jug780ddx"]
+
+[ext_resource type="Script" path="res://scripts/Enemies/firing_target.gd" id="1_gj30l"]
+[ext_resource type="Texture2D" uid="uid://dk8xcnqsjhqte" path="res://scripts/Enemies/Pooch.png" id="1_il26r"]
+[ext_resource type="Resource" uid="uid://ceb7lby31ntot" path="res://scripts/Enemies/Default.tres" id="2_nb7wx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6oayr"]
+size = Vector3(0.55899, 0.578261, 0.163202)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_228n8"]
+albedo_color = Color(0.423529, 0, 0.207843, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jtu6g"]
+material = SubResource("StandardMaterial3D_228n8")
+
+[sub_resource type="Animation" id="Animation_dr0b4"]
+resource_name = "Bonk"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Marker3D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(0.5, 0.5),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(-1.5708, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_qpea3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Marker3D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7t05u"]
+_data = {
+"Bonk": SubResource("Animation_dr0b4"),
+"RESET": SubResource("Animation_qpea3")
+}
+
+[node name="FiringTarget" type="Area3D"]
+collision_layer = 2049
+collision_mask = 2049
+script = ExtResource("1_gj30l")
+enemy = ExtResource("2_nb7wx")
+image = ExtResource("1_il26r")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.342974, 0)
+shape = SubResource("BoxShape3D_6oayr")
+
+[node name="Marker3D" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0188356, 0.0221782, 0)
+
+[node name="Sprite3D" type="Sprite3D" parent="Marker3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.297258, 0)
+texture_filter = 0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.647602, 0, 0, 0, 0.049, 0, 0, 0, 0.064, 0, 0, 0)
+mesh = SubResource("BoxMesh_jtu6g")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Timer")
+libraries = {
+"": SubResource("AnimationLibrary_7t05u")
+}
+autoplay = "RESET"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.25
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

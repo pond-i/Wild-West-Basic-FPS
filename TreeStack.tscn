@@ -1,0 +1,2250 @@
+[gd_scene load_steps=16 format=3 uid="uid://drw8efktec067"]
+
+[ext_resource type="PackedScene" uid="uid://bpq1675pxdhh2" path="res://models/gbl_models/Tree.glb" id="1_s1y2m"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7ighk"]
+albedo_color = Color(0.478431, 0, 0.0980392, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ynsty"]
+albedo_color = Color(0, 0.47451, 0.156863, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jliof"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_yyxlg"]
+_surfaces = [{
+"aabb": AABB(-0.866025, -7, -1, 1.73205, 14, 2),
+"format": 34896613377,
+"index_count": 204,
+"index_data": PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0, 2, 0, 5, 0, 3, 0, 2, 0, 4, 0, 5, 0, 4, 0, 7, 0, 5, 0, 4, 0, 6, 0, 7, 0, 6, 0, 9, 0, 7, 0, 6, 0, 8, 0, 9, 0, 7, 0, 5, 0, 5, 0, 7, 0, 7, 0, 5, 0, 8, 0, 11, 0, 9, 0, 8, 0, 10, 0, 11, 0, 10, 0, 1, 0, 11, 0, 10, 0, 0, 0, 1, 0, 6, 0, 8, 0, 8, 0, 6, 0, 6, 0, 8, 0, 17, 0, 13, 0, 12, 0, 13, 0, 15, 0, 14, 0, 15, 0, 17, 0, 16, 0, 13, 0, 17, 0, 15, 0, 2, 0, 4, 0, 4, 0, 2, 0, 2, 0, 4, 0, 8, 0, 10, 0, 10, 0, 8, 0, 8, 0, 10, 0, 0, 0, 2, 0, 2, 0, 0, 0, 0, 0, 2, 0, 4, 0, 6, 0, 6, 0, 4, 0, 4, 0, 6, 0, 10, 0, 0, 0, 0, 0, 10, 0, 10, 0, 0, 0, 20, 0, 19, 0, 18, 0, 19, 0, 22, 0, 23, 0, 22, 0, 20, 0, 21, 0, 19, 0, 20, 0, 22, 0, 1, 0, 11, 0, 11, 0, 1, 0, 1, 0, 11, 0, 9, 0, 7, 0, 7, 0, 9, 0, 9, 0, 7, 0, 5, 0, 3, 0, 3, 0, 5, 0, 5, 0, 3, 0, 11, 0, 9, 0, 9, 0, 11, 0, 11, 0, 9, 0, 3, 0, 1, 0, 1, 0, 3, 0, 3, 0, 1, 0, 19, 0, 3, 0, 18, 0, 19, 0, 1, 0, 3, 0, 18, 0, 5, 0, 20, 0, 18, 0, 3, 0, 5, 0, 20, 0, 7, 0, 21, 0, 20, 0, 5, 0, 7, 0, 21, 0, 9, 0, 22, 0, 21, 0, 7, 0, 9, 0, 22, 0, 11, 0, 23, 0, 22, 0, 9, 0, 11, 0, 23, 0, 1, 0, 19, 0, 23, 0, 11, 0, 1, 0, 13, 0, 0, 0, 12, 0, 13, 0, 2, 0, 0, 0, 14, 0, 2, 0, 13, 0, 14, 0, 4, 0, 2, 0, 15, 0, 4, 0, 14, 0, 15, 0, 6, 0, 4, 0, 16, 0, 6, 0, 15, 0, 16, 0, 8, 0, 6, 0, 17, 0, 8, 0, 16, 0, 17, 0, 10, 0, 8, 0, 12, 0, 10, 0, 17, 0, 12, 0, 0, 0, 10, 0),
+"lods": [1e-10, PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0, 2, 0, 5, 0, 3, 0, 2, 0, 4, 0, 5, 0, 4, 0, 7, 0, 5, 0, 4, 0, 6, 0, 7, 0, 6, 0, 9, 0, 7, 0, 6, 0, 8, 0, 9, 0, 8, 0, 11, 0, 9, 0, 8, 0, 10, 0, 11, 0, 10, 0, 1, 0, 11, 0, 10, 0, 0, 0, 1, 0, 3, 0, 5, 0, 7, 0, 7, 0, 11, 0, 3, 0, 3, 0, 11, 0, 1, 0, 7, 0, 9, 0, 11, 0, 4, 0, 8, 0, 6, 0, 4, 0, 10, 0, 8, 0, 2, 0, 10, 0, 4, 0, 2, 0, 0, 0, 10, 0)],
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray(255, 127, 0, 0, 0, 0, 0, 0, 255, 127, 255, 255, 0, 0, 0, 0, 255, 255, 0, 0, 255, 63, 0, 0, 255, 255, 255, 255, 255, 63, 0, 0, 255, 255, 0, 0, 255, 191, 0, 0, 255, 255, 255, 255, 255, 191, 0, 0, 255, 127, 0, 0, 255, 255, 0, 0, 255, 127, 255, 255, 255, 255, 0, 0, 0, 0, 0, 0, 255, 191, 0, 0, 0, 0, 255, 255, 255, 191, 0, 0, 0, 0, 0, 0, 255, 63, 0, 0, 0, 0, 255, 255, 255, 63, 0, 0, 255, 127, 0, 0, 143, 29, 0, 0, 111, 226, 0, 0, 199, 78, 0, 0, 111, 226, 0, 0, 55, 177, 0, 0, 255, 127, 0, 0, 111, 226, 0, 0, 143, 29, 0, 0, 55, 177, 0, 0, 143, 29, 0, 0, 199, 78, 0, 0, 111, 226, 255, 255, 199, 78, 0, 0, 255, 127, 255, 255, 143, 29, 0, 0, 111, 226, 255, 255, 55, 177, 0, 0, 255, 127, 255, 255, 111, 226, 0, 0, 143, 29, 255, 255, 55, 177, 0, 0, 143, 29, 255, 255, 199, 78, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_4rdns"]
+resource_name = "Tree_Cylinder_001"
+_surfaces = [{
+"aabb": AABB(-0.866025, -7, -1, 1.73205, 14, 2),
+"attribute_data": PackedByteArray(255, 127, 164, 192, 255, 127, 164, 192, 255, 255, 164, 192, 255, 255, 164, 192, 255, 127, 255, 127, 255, 127, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 169, 234, 164, 192, 169, 234, 164, 192, 169, 234, 164, 192, 169, 234, 255, 127, 169, 234, 255, 127, 169, 234, 255, 127, 84, 213, 164, 192, 84, 213, 164, 192, 84, 213, 164, 192, 84, 213, 255, 127, 84, 213, 255, 127, 84, 213, 255, 127, 255, 191, 164, 192, 255, 191, 164, 192, 255, 191, 164, 192, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 169, 170, 164, 192, 169, 170, 164, 192, 169, 170, 164, 192, 169, 170, 255, 127, 169, 170, 255, 127, 169, 170, 255, 127, 84, 149, 164, 192, 84, 149, 164, 192, 84, 149, 164, 192, 84, 149, 255, 127, 84, 149, 255, 127, 84, 149, 255, 127, 255, 223, 26, 201, 255, 223, 26, 201, 255, 223, 26, 201, 116, 244, 8, 213, 116, 244, 8, 213, 116, 244, 229, 236, 116, 244, 229, 236, 255, 223, 212, 248, 255, 223, 212, 248, 255, 223, 212, 248, 137, 203, 229, 236, 137, 203, 229, 236, 137, 203, 229, 236, 137, 203, 8, 213, 137, 203, 8, 213, 137, 203, 8, 213, 117, 180, 8, 213, 117, 180, 8, 213, 255, 159, 26, 201, 255, 159, 26, 201, 255, 159, 26, 201, 117, 180, 229, 236, 117, 180, 229, 236, 255, 159, 212, 248, 255, 159, 212, 248, 255, 159, 212, 248, 137, 139, 229, 236, 137, 139, 229, 236, 137, 139, 229, 236, 137, 139, 8, 213, 137, 139, 8, 213, 137, 139, 8, 213, 153, 186, 115, 209, 169, 234, 255, 127, 255, 127, 255, 127, 255, 159, 239, 193, 255, 255, 255, 127, 255, 159, 239, 193, 153, 186, 123, 240, 84, 213, 255, 127, 255, 159, 255, 255, 255, 191, 255, 127, 255, 159, 255, 255, 100, 133, 123, 240, 169, 170, 255, 127, 100, 133, 123, 240, 100, 133, 115, 209, 84, 149, 255, 127, 100, 133, 115, 209, 255, 223, 239, 193, 255, 127, 164, 192, 255, 255, 164, 192, 255, 223, 239, 193, 153, 250, 115, 209, 169, 234, 164, 192, 153, 250, 123, 240, 84, 213, 164, 192, 255, 223, 255, 255, 255, 191, 164, 192, 255, 223, 255, 255, 100, 197, 123, 240, 169, 170, 164, 192, 100, 197, 123, 240, 100, 197, 115, 209, 84, 149, 164, 192, 100, 197, 115, 209, 84, 213, 164, 192, 84, 213, 255, 127, 169, 170, 164, 192, 169, 170, 255, 127, 84, 149, 164, 192, 84, 149, 255, 127),
+"format": 34896613399,
+"index_count": 204,
+"index_data": PackedByteArray(3, 0, 12, 0, 7, 0, 3, 0, 9, 0, 12, 0, 10, 0, 19, 0, 13, 0, 10, 0, 16, 0, 19, 0, 15, 0, 25, 0, 18, 0, 15, 0, 22, 0, 25, 0, 20, 0, 30, 0, 23, 0, 20, 0, 27, 0, 30, 0, 24, 0, 77, 0, 17, 0, 24, 0, 79, 0, 77, 0, 26, 0, 35, 0, 29, 0, 26, 0, 32, 0, 35, 0, 33, 0, 4, 0, 36, 0, 33, 0, 0, 0, 4, 0, 21, 0, 99, 0, 28, 0, 21, 0, 96, 0, 99, 0, 52, 0, 42, 0, 39, 0, 42, 0, 46, 0, 44, 0, 46, 0, 52, 0, 49, 0, 42, 0, 52, 0, 46, 0, 8, 0, 94, 0, 14, 0, 8, 0, 92, 0, 94, 0, 28, 0, 102, 0, 34, 0, 28, 0, 99, 0, 102, 0, 2, 0, 92, 0, 8, 0, 2, 0, 89, 0, 92, 0, 14, 0, 96, 0, 21, 0, 14, 0, 94, 0, 96, 0, 34, 0, 88, 0, 1, 0, 34, 0, 102, 0, 88, 0, 60, 0, 57, 0, 55, 0, 57, 0, 65, 0, 68, 0, 65, 0, 60, 0, 62, 0, 57, 0, 60, 0, 65, 0, 5, 0, 85, 0, 37, 0, 5, 0, 72, 0, 85, 0, 31, 0, 79, 0, 24, 0, 31, 0, 82, 0, 79, 0, 17, 0, 71, 0, 11, 0, 17, 0, 77, 0, 71, 0, 37, 0, 82, 0, 31, 0, 37, 0, 85, 0, 82, 0, 11, 0, 74, 0, 6, 0, 11, 0, 71, 0, 74, 0, 56, 0, 70, 0, 54, 0, 56, 0, 73, 0, 70, 0, 54, 0, 76, 0, 59, 0, 54, 0, 70, 0, 76, 0, 59, 0, 78, 0, 61, 0, 59, 0, 76, 0, 78, 0, 63, 0, 83, 0, 66, 0, 63, 0, 80, 0, 83, 0, 64, 0, 84, 0, 67, 0, 64, 0, 81, 0, 84, 0, 69, 0, 75, 0, 58, 0, 69, 0, 86, 0, 75, 0, 41, 0, 87, 0, 38, 0, 41, 0, 91, 0, 87, 0, 43, 0, 91, 0, 41, 0, 43, 0, 93, 0, 91, 0, 45, 0, 93, 0, 43, 0, 45, 0, 95, 0, 93, 0, 50, 0, 97, 0, 47, 0, 50, 0, 100, 0, 97, 0, 51, 0, 98, 0, 48, 0, 51, 0, 101, 0, 98, 0, 40, 0, 103, 0, 53, 0, 40, 0, 90, 0, 103, 0),
+"lods": [1e-10, PackedByteArray(3, 0, 12, 0, 7, 0, 3, 0, 9, 0, 12, 0, 10, 0, 105, 0, 13, 0, 10, 0, 104, 0, 105, 0, 15, 0, 25, 0, 18, 0, 15, 0, 22, 0, 25, 0, 20, 0, 107, 0, 23, 0, 20, 0, 106, 0, 107, 0, 26, 0, 35, 0, 29, 0, 26, 0, 32, 0, 35, 0, 108, 0, 4, 0, 109, 0, 108, 0, 0, 0, 4, 0, 70, 0, 76, 0, 78, 0, 78, 0, 84, 0, 70, 0, 70, 0, 84, 0, 73, 0, 78, 0, 81, 0, 84, 0, 93, 0, 98, 0, 95, 0, 93, 0, 101, 0, 98, 0, 91, 0, 101, 0, 93, 0, 91, 0, 87, 0, 101, 0)],
+"material": SubResource("StandardMaterial3D_jliof"),
+"primitive": 3,
+"uv_scale": Vector4(2, 1.98, 0, 0),
+"vertex_count": 110,
+"vertex_data": PackedByteArray(255, 127, 0, 0, 0, 0, 169, 234, 255, 127, 0, 0, 0, 0, 255, 191, 255, 127, 0, 0, 0, 0, 255, 191, 255, 127, 0, 0, 0, 0, 169, 234, 255, 127, 255, 255, 0, 0, 169, 234, 255, 127, 255, 255, 0, 0, 255, 191, 255, 127, 255, 255, 0, 0, 255, 191, 255, 127, 255, 255, 0, 0, 169, 234, 255, 255, 0, 0, 255, 63, 255, 191, 255, 255, 0, 0, 255, 63, 169, 234, 255, 255, 0, 0, 255, 63, 255, 191, 255, 255, 255, 255, 255, 63, 255, 191, 255, 255, 255, 255, 255, 63, 169, 234, 255, 255, 255, 255, 255, 63, 255, 191, 255, 255, 0, 0, 255, 191, 255, 191, 255, 255, 0, 0, 255, 191, 84, 149, 255, 255, 0, 0, 255, 191, 255, 191, 255, 255, 255, 255, 255, 191, 255, 191, 255, 255, 255, 255, 255, 191, 84, 149, 255, 255, 255, 255, 255, 191, 255, 191, 255, 127, 0, 0, 255, 255, 84, 149, 255, 127, 0, 0, 255, 255, 255, 191, 255, 127, 0, 0, 255, 255, 84, 149, 255, 127, 255, 255, 255, 255, 84, 149, 255, 127, 255, 255, 255, 255, 255, 191, 255, 127, 255, 255, 255, 255, 84, 149, 0, 0, 0, 0, 255, 191, 255, 191, 0, 0, 0, 0, 255, 191, 84, 149, 0, 0, 0, 0, 255, 191, 255, 191, 0, 0, 255, 255, 255, 191, 255, 191, 0, 0, 255, 255, 255, 191, 84, 149, 0, 0, 255, 255, 255, 191, 255, 191, 0, 0, 0, 0, 255, 63, 255, 191, 0, 0, 0, 0, 255, 63, 169, 234, 0, 0, 0, 0, 255, 63, 255, 191, 0, 0, 255, 255, 255, 63, 255, 191, 0, 0, 255, 255, 255, 63, 169, 234, 0, 0, 255, 255, 255, 63, 255, 191, 255, 127, 0, 0, 143, 29, 255, 63, 255, 127, 0, 0, 143, 29, 255, 63, 255, 127, 0, 0, 143, 29, 255, 63, 111, 226, 0, 0, 199, 78, 255, 63, 111, 226, 0, 0, 199, 78, 255, 63, 111, 226, 0, 0, 55, 177, 255, 63, 111, 226, 0, 0, 55, 177, 255, 63, 255, 127, 0, 0, 111, 226, 255, 63, 255, 127, 0, 0, 111, 226, 255, 63, 255, 127, 0, 0, 111, 226, 255, 63, 143, 29, 0, 0, 55, 177, 255, 63, 143, 29, 0, 0, 55, 177, 255, 63, 143, 29, 0, 0, 55, 177, 255, 63, 143, 29, 0, 0, 199, 78, 255, 63, 143, 29, 0, 0, 199, 78, 255, 63, 143, 29, 0, 0, 199, 78, 255, 63, 111, 226, 255, 255, 199, 78, 255, 191, 111, 226, 255, 255, 199, 78, 255, 191, 255, 127, 255, 255, 143, 29, 255, 191, 255, 127, 255, 255, 143, 29, 255, 191, 255, 127, 255, 255, 143, 29, 255, 191, 111, 226, 255, 255, 55, 177, 255, 191, 111, 226, 255, 255, 55, 177, 255, 191, 255, 127, 255, 255, 111, 226, 255, 191, 255, 127, 255, 255, 111, 226, 255, 191, 255, 127, 255, 255, 111, 226, 255, 191, 143, 29, 255, 255, 55, 177, 255, 191, 143, 29, 255, 255, 55, 177, 255, 191, 143, 29, 255, 255, 55, 177, 255, 191, 143, 29, 255, 255, 199, 78, 255, 191, 143, 29, 255, 255, 199, 78, 255, 191, 143, 29, 255, 255, 199, 78, 255, 191, 255, 255, 255, 255, 255, 63, 255, 191, 255, 255, 255, 255, 255, 63, 255, 191, 255, 127, 255, 255, 0, 0, 255, 191, 255, 127, 255, 255, 0, 0, 255, 191, 255, 127, 255, 255, 0, 0, 255, 191, 255, 127, 255, 255, 0, 0, 255, 191, 255, 255, 255, 255, 255, 191, 255, 191, 255, 255, 255, 255, 255, 191, 255, 191, 255, 127, 255, 255, 255, 255, 255, 191, 255, 127, 255, 255, 255, 255, 255, 191, 255, 127, 255, 255, 255, 255, 255, 191, 0, 0, 255, 255, 255, 191, 255, 191, 0, 0, 255, 255, 255, 191, 255, 191, 0, 0, 255, 255, 255, 191, 255, 191, 0, 0, 255, 255, 255, 63, 255, 191, 0, 0, 255, 255, 255, 63, 255, 191, 0, 0, 255, 255, 255, 63, 255, 191, 255, 127, 0, 0, 0, 0, 255, 63, 255, 127, 0, 0, 0, 0, 255, 191, 255, 127, 0, 0, 0, 0, 255, 191, 255, 127, 0, 0, 0, 0, 255, 63, 255, 255, 0, 0, 255, 63, 255, 63, 255, 255, 0, 0, 255, 63, 255, 191, 255, 255, 0, 0, 255, 191, 255, 63, 255, 255, 0, 0, 255, 191, 255, 191, 255, 127, 0, 0, 255, 255, 255, 63, 255, 127, 0, 0, 255, 255, 255, 191, 255, 127, 0, 0, 255, 255, 255, 63, 0, 0, 0, 0, 255, 191, 255, 63, 0, 0, 0, 0, 255, 191, 255, 191, 0, 0, 0, 0, 255, 191, 255, 63, 0, 0, 0, 0, 255, 63, 255, 63, 0, 0, 0, 0, 255, 63, 255, 191, 0, 0, 0, 0, 255, 63, 255, 63, 255, 255, 0, 0, 255, 191, 192, 173, 255, 255, 255, 255, 255, 191, 192, 173, 0, 0, 0, 0, 255, 191, 192, 173, 0, 0, 255, 255, 255, 191, 192, 173, 0, 0, 0, 0, 255, 63, 62, 210, 0, 0, 255, 255, 255, 63, 62, 210, 255, 127, 255, 255, 255, 255, 255, 127, 255, 255, 255, 127, 255, 127, 0, 0, 255, 127, 255, 255, 255, 255, 255, 127, 255, 255, 255, 127, 255, 127, 0, 0, 255, 255, 255, 127, 255, 127, 0, 0, 255, 127, 0, 0, 255, 255, 255, 127, 255, 127, 0, 0, 255, 127, 0, 0, 255, 255, 255, 127, 255, 127, 0, 0, 255, 127, 0, 0, 255, 255, 255, 127, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 255, 255, 255, 255, 255, 127, 255, 127, 0, 0, 255, 127, 255, 255, 255, 255, 255, 127, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 255, 255, 255, 255, 255, 127, 255, 127, 255, 255, 255, 127, 255, 255, 255, 255, 255, 127, 255, 127, 255, 255, 255, 127, 255, 255, 255, 255, 255, 127, 255, 127, 255, 255, 255, 127, 255, 255, 255, 255, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 254, 255, 255, 127, 254, 255, 255, 127, 254, 255, 255, 127, 254, 255, 255, 127, 254, 255, 255, 127, 254, 255, 255, 127, 254, 255, 255, 127, 255, 255, 255, 127, 254, 255, 255, 127, 254, 255, 255, 127, 254, 255, 255, 127, 254, 255, 255, 127, 254, 255, 255, 127, 254, 255, 255, 127, 254, 255, 255, 127, 254, 255, 255, 127, 254, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 254, 255, 255, 127, 255, 255, 255, 127, 254, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 254, 255, 255, 127, 254, 255, 255, 127, 255, 255, 255, 127, 254, 255, 255, 127, 254, 255, 255, 127, 255, 255, 255, 127, 254, 255, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 0, 0, 255, 127, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_yyxlg")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yevtk"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_oay1p"]
+_surfaces = [{
+"aabb": AABB(-4, -4, -4, 8, 8, 8),
+"format": 34896613377,
+"index_count": 42,
+"index_data": PackedByteArray(0, 0, 1, 0, 8, 0, 1, 0, 2, 0, 8, 0, 2, 0, 3, 0, 8, 0, 3, 0, 4, 0, 8, 0, 4, 0, 5, 0, 8, 0, 5, 0, 6, 0, 8, 0, 7, 0, 1, 0, 0, 0, 1, 0, 3, 0, 2, 0, 3, 0, 5, 0, 4, 0, 5, 0, 7, 0, 6, 0, 7, 0, 3, 0, 1, 0, 3, 0, 7, 0, 5, 0, 6, 0, 7, 0, 8, 0, 7, 0, 0, 0, 8, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 9,
+"vertex_data": PackedByteArray(255, 127, 0, 0, 0, 0, 0, 0, 129, 218, 0, 0, 125, 37, 0, 0, 255, 255, 0, 0, 255, 127, 0, 0, 129, 218, 0, 0, 129, 218, 0, 0, 255, 127, 0, 0, 255, 255, 0, 0, 125, 37, 0, 0, 129, 218, 0, 0, 0, 0, 0, 0, 255, 127, 0, 0, 125, 37, 0, 0, 125, 37, 0, 0, 255, 127, 255, 255, 255, 127, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_fi1a6"]
+resource_name = "Tree_Cone_001"
+_surfaces = [{
+"aabb": AABB(-4, -4, -4, 8, 8, 8),
+"attribute_data": PackedByteArray(255, 63, 142, 130, 255, 191, 142, 130, 255, 63, 142, 130, 112, 235, 141, 148, 113, 107, 141, 148, 113, 107, 141, 148, 111, 253, 255, 191, 112, 125, 255, 191, 112, 125, 255, 191, 112, 235, 112, 235, 113, 107, 112, 235, 113, 107, 112, 235, 255, 63, 111, 253, 255, 191, 111, 253, 255, 63, 111, 253, 142, 20, 112, 235, 142, 20, 112, 235, 141, 148, 112, 235, 143, 2, 255, 191, 143, 2, 255, 191, 142, 130, 255, 191, 142, 20, 141, 148, 142, 20, 141, 148, 141, 148, 141, 148, 255, 63, 255, 191, 255, 63, 255, 191, 255, 63, 255, 191, 255, 63, 255, 191, 255, 63, 255, 191, 255, 63, 255, 191, 255, 63, 255, 191, 255, 63, 255, 191),
+"format": 34896613399,
+"index_count": 42,
+"index_data": PackedByteArray(2, 0, 4, 0, 29, 0, 5, 0, 8, 0, 31, 0, 7, 0, 11, 0, 30, 0, 10, 0, 14, 0, 28, 0, 12, 0, 16, 0, 27, 0, 15, 0, 18, 0, 24, 0, 23, 0, 3, 0, 1, 0, 3, 0, 9, 0, 6, 0, 9, 0, 17, 0, 13, 0, 17, 0, 23, 0, 20, 0, 23, 0, 9, 0, 3, 0, 9, 0, 23, 0, 17, 0, 19, 0, 21, 0, 25, 0, 22, 0, 0, 0, 26, 0),
+"material": SubResource("StandardMaterial3D_yevtk"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 32,
+"vertex_data": PackedByteArray(255, 127, 0, 0, 0, 0, 245, 233, 255, 127, 0, 0, 0, 0, 255, 63, 255, 127, 0, 0, 0, 0, 245, 233, 129, 218, 0, 0, 125, 37, 255, 63, 129, 218, 0, 0, 125, 37, 245, 233, 129, 218, 0, 0, 125, 37, 166, 214, 255, 255, 0, 0, 255, 127, 255, 63, 255, 255, 0, 0, 255, 127, 4, 193, 255, 255, 0, 0, 255, 127, 166, 214, 129, 218, 0, 0, 129, 218, 255, 63, 129, 218, 0, 0, 129, 218, 94, 164, 129, 218, 0, 0, 129, 218, 4, 193, 255, 127, 0, 0, 255, 255, 94, 164, 255, 127, 0, 0, 255, 255, 255, 63, 255, 127, 0, 0, 255, 255, 94, 164, 125, 37, 0, 0, 129, 218, 4, 193, 125, 37, 0, 0, 129, 218, 94, 164, 125, 37, 0, 0, 129, 218, 255, 63, 0, 0, 0, 0, 255, 127, 4, 193, 0, 0, 0, 0, 255, 127, 166, 214, 0, 0, 0, 0, 255, 127, 255, 63, 125, 37, 0, 0, 125, 37, 166, 214, 125, 37, 0, 0, 125, 37, 245, 233, 125, 37, 0, 0, 125, 37, 255, 63, 255, 127, 255, 255, 255, 127, 4, 193, 255, 127, 255, 255, 255, 127, 166, 214, 255, 127, 255, 255, 255, 127, 245, 233, 255, 127, 255, 255, 255, 127, 94, 164, 255, 127, 255, 255, 255, 127, 94, 164, 255, 127, 255, 255, 255, 127, 245, 233, 255, 127, 255, 255, 255, 127, 4, 193, 255, 127, 255, 255, 255, 127, 166, 214, 141, 224, 192, 168, 0, 0, 255, 127, 61, 215, 142, 96, 0, 0, 255, 127, 61, 215, 142, 96, 126, 190, 95, 89, 0, 0, 255, 127, 18, 179, 110, 96, 126, 190, 95, 89, 0, 0, 255, 127, 169, 177, 25, 110, 18, 179, 110, 96, 24, 238, 85, 206, 0, 0, 255, 127, 169, 177, 25, 110, 110, 224, 235, 204, 24, 238, 85, 206, 0, 0, 255, 127, 110, 224, 235, 204, 95, 217, 128, 193, 0, 0, 255, 127, 95, 217, 128, 193, 141, 224, 192, 168, 0, 0, 255, 127, 110, 224, 235, 204, 95, 217, 128, 193, 141, 224, 192, 168, 24, 238, 85, 206, 169, 177, 25, 110, 61, 215, 142, 96, 18, 179, 110, 96, 126, 190, 95, 89)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_oay1p")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wl7mv"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_nbnw7"]
+_surfaces = [{
+"aabb": AABB(-4, -4, -4, 8, 8, 8),
+"format": 34896613377,
+"index_count": 42,
+"index_data": PackedByteArray(0, 0, 1, 0, 8, 0, 1, 0, 2, 0, 8, 0, 2, 0, 3, 0, 8, 0, 3, 0, 4, 0, 8, 0, 4, 0, 5, 0, 8, 0, 5, 0, 6, 0, 8, 0, 7, 0, 1, 0, 0, 0, 1, 0, 3, 0, 2, 0, 3, 0, 5, 0, 4, 0, 5, 0, 7, 0, 6, 0, 7, 0, 3, 0, 1, 0, 3, 0, 7, 0, 5, 0, 6, 0, 7, 0, 8, 0, 7, 0, 0, 0, 8, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 9,
+"vertex_data": PackedByteArray(255, 127, 0, 0, 0, 0, 0, 0, 129, 218, 0, 0, 125, 37, 0, 0, 255, 255, 0, 0, 255, 127, 0, 0, 129, 218, 0, 0, 129, 218, 0, 0, 255, 127, 0, 0, 255, 255, 0, 0, 125, 37, 0, 0, 129, 218, 0, 0, 0, 0, 0, 0, 255, 127, 0, 0, 125, 37, 0, 0, 125, 37, 0, 0, 255, 127, 255, 255, 255, 127, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_3v02s"]
+resource_name = "Tree_Cone_002"
+_surfaces = [{
+"aabb": AABB(-4, -4, -4, 8, 8, 8),
+"attribute_data": PackedByteArray(255, 63, 142, 130, 255, 191, 142, 130, 255, 63, 142, 130, 112, 235, 141, 148, 113, 107, 141, 148, 113, 107, 141, 148, 111, 253, 255, 191, 112, 125, 255, 191, 112, 125, 255, 191, 112, 235, 112, 235, 113, 107, 112, 235, 113, 107, 112, 235, 255, 63, 111, 253, 255, 191, 111, 253, 255, 63, 111, 253, 142, 20, 112, 235, 142, 20, 112, 235, 141, 148, 112, 235, 143, 2, 255, 191, 143, 2, 255, 191, 142, 130, 255, 191, 142, 20, 141, 148, 142, 20, 141, 148, 141, 148, 141, 148, 255, 63, 255, 191, 255, 63, 255, 191, 255, 63, 255, 191, 255, 63, 255, 191, 255, 63, 255, 191, 255, 63, 255, 191, 255, 63, 255, 191, 255, 63, 255, 191),
+"format": 34896613399,
+"index_count": 42,
+"index_data": PackedByteArray(2, 0, 4, 0, 29, 0, 5, 0, 8, 0, 31, 0, 7, 0, 11, 0, 30, 0, 10, 0, 14, 0, 28, 0, 12, 0, 16, 0, 27, 0, 15, 0, 18, 0, 24, 0, 23, 0, 3, 0, 1, 0, 3, 0, 9, 0, 6, 0, 9, 0, 17, 0, 13, 0, 17, 0, 23, 0, 20, 0, 23, 0, 9, 0, 3, 0, 9, 0, 23, 0, 17, 0, 19, 0, 21, 0, 25, 0, 22, 0, 0, 0, 26, 0),
+"material": SubResource("StandardMaterial3D_wl7mv"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 32,
+"vertex_data": PackedByteArray(255, 127, 0, 0, 0, 0, 245, 233, 255, 127, 0, 0, 0, 0, 255, 63, 255, 127, 0, 0, 0, 0, 245, 233, 129, 218, 0, 0, 125, 37, 255, 63, 129, 218, 0, 0, 125, 37, 245, 233, 129, 218, 0, 0, 125, 37, 166, 214, 255, 255, 0, 0, 255, 127, 255, 63, 255, 255, 0, 0, 255, 127, 4, 193, 255, 255, 0, 0, 255, 127, 166, 214, 129, 218, 0, 0, 129, 218, 255, 63, 129, 218, 0, 0, 129, 218, 94, 164, 129, 218, 0, 0, 129, 218, 4, 193, 255, 127, 0, 0, 255, 255, 94, 164, 255, 127, 0, 0, 255, 255, 255, 63, 255, 127, 0, 0, 255, 255, 94, 164, 125, 37, 0, 0, 129, 218, 4, 193, 125, 37, 0, 0, 129, 218, 94, 164, 125, 37, 0, 0, 129, 218, 255, 63, 0, 0, 0, 0, 255, 127, 4, 193, 0, 0, 0, 0, 255, 127, 166, 214, 0, 0, 0, 0, 255, 127, 255, 63, 125, 37, 0, 0, 125, 37, 166, 214, 125, 37, 0, 0, 125, 37, 245, 233, 125, 37, 0, 0, 125, 37, 255, 63, 255, 127, 255, 255, 255, 127, 4, 193, 255, 127, 255, 255, 255, 127, 166, 214, 255, 127, 255, 255, 255, 127, 245, 233, 255, 127, 255, 255, 255, 127, 94, 164, 255, 127, 255, 255, 255, 127, 94, 164, 255, 127, 255, 255, 255, 127, 245, 233, 255, 127, 255, 255, 255, 127, 4, 193, 255, 127, 255, 255, 255, 127, 166, 214, 141, 224, 192, 168, 0, 0, 255, 127, 61, 215, 142, 96, 0, 0, 255, 127, 61, 215, 142, 96, 126, 190, 95, 89, 0, 0, 255, 127, 18, 179, 110, 96, 126, 190, 95, 89, 0, 0, 255, 127, 169, 177, 25, 110, 18, 179, 110, 96, 24, 238, 85, 206, 0, 0, 255, 127, 169, 177, 25, 110, 110, 224, 235, 204, 24, 238, 85, 206, 0, 0, 255, 127, 110, 224, 235, 204, 95, 217, 128, 193, 0, 0, 255, 127, 95, 217, 128, 193, 141, 224, 192, 168, 0, 0, 255, 127, 110, 224, 235, 204, 95, 217, 128, 193, 141, 224, 192, 168, 24, 238, 85, 206, 169, 177, 25, 110, 61, 215, 142, 96, 18, 179, 110, 96, 126, 190, 95, 89)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_nbnw7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_32aqg"]
+vertex_color_use_as_albedo = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_tk3cf"]
+_surfaces = [{
+"aabb": AABB(-4, -4, -4, 8, 8, 8),
+"format": 34896613377,
+"index_count": 42,
+"index_data": PackedByteArray(0, 0, 1, 0, 8, 0, 1, 0, 2, 0, 8, 0, 2, 0, 3, 0, 8, 0, 3, 0, 4, 0, 8, 0, 4, 0, 5, 0, 8, 0, 5, 0, 6, 0, 8, 0, 7, 0, 1, 0, 0, 0, 1, 0, 3, 0, 2, 0, 3, 0, 5, 0, 4, 0, 5, 0, 7, 0, 6, 0, 7, 0, 3, 0, 1, 0, 3, 0, 7, 0, 5, 0, 6, 0, 7, 0, 8, 0, 7, 0, 0, 0, 8, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 9,
+"vertex_data": PackedByteArray(255, 127, 0, 0, 0, 0, 0, 0, 129, 218, 0, 0, 125, 37, 0, 0, 255, 255, 0, 0, 255, 127, 0, 0, 129, 218, 0, 0, 129, 218, 0, 0, 255, 127, 0, 0, 255, 255, 0, 0, 125, 37, 0, 0, 129, 218, 0, 0, 0, 0, 0, 0, 255, 127, 0, 0, 125, 37, 0, 0, 125, 37, 0, 0, 255, 127, 255, 255, 255, 127, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_lpb65"]
+resource_name = "Tree_Cone_003"
+_surfaces = [{
+"aabb": AABB(-4, -4, -4, 8, 8, 8),
+"attribute_data": PackedByteArray(255, 255, 255, 255, 255, 63, 142, 130, 255, 255, 255, 255, 255, 191, 142, 130, 255, 255, 255, 255, 255, 63, 142, 130, 255, 255, 255, 255, 112, 235, 141, 148, 255, 255, 255, 255, 113, 107, 141, 148, 255, 255, 255, 255, 113, 107, 141, 148, 255, 255, 255, 255, 111, 253, 255, 191, 255, 255, 255, 255, 112, 125, 255, 191, 255, 255, 255, 255, 112, 125, 255, 191, 255, 255, 255, 255, 112, 235, 112, 235, 255, 255, 255, 255, 113, 107, 112, 235, 255, 255, 255, 255, 113, 107, 112, 235, 255, 255, 255, 255, 255, 63, 111, 253, 255, 255, 255, 255, 255, 191, 111, 253, 255, 255, 255, 255, 255, 63, 111, 253, 255, 255, 255, 255, 142, 20, 112, 235, 255, 255, 255, 255, 142, 20, 112, 235, 255, 255, 255, 255, 141, 148, 112, 235, 255, 255, 255, 255, 143, 2, 255, 191, 255, 255, 255, 255, 143, 2, 255, 191, 255, 255, 255, 255, 142, 130, 255, 191, 255, 255, 255, 255, 142, 20, 141, 148, 255, 255, 255, 255, 142, 20, 141, 148, 255, 255, 255, 255, 141, 148, 141, 148, 255, 255, 255, 255, 255, 63, 255, 191, 255, 255, 255, 255, 255, 63, 255, 191, 255, 255, 255, 255, 255, 63, 255, 191, 255, 255, 255, 255, 255, 63, 255, 191, 255, 255, 255, 255, 255, 63, 255, 191, 255, 255, 255, 255, 255, 63, 255, 191, 255, 255, 255, 255, 255, 63, 255, 191, 255, 255, 255, 255, 255, 63, 255, 191),
+"format": 34896613407,
+"index_count": 42,
+"index_data": PackedByteArray(2, 0, 4, 0, 29, 0, 5, 0, 8, 0, 31, 0, 7, 0, 11, 0, 30, 0, 10, 0, 14, 0, 28, 0, 12, 0, 16, 0, 27, 0, 15, 0, 18, 0, 24, 0, 23, 0, 3, 0, 1, 0, 3, 0, 9, 0, 6, 0, 9, 0, 17, 0, 13, 0, 17, 0, 23, 0, 20, 0, 23, 0, 9, 0, 3, 0, 9, 0, 23, 0, 17, 0, 19, 0, 21, 0, 25, 0, 22, 0, 0, 0, 26, 0),
+"material": SubResource("StandardMaterial3D_32aqg"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 32,
+"vertex_data": PackedByteArray(255, 127, 0, 0, 0, 0, 245, 233, 255, 127, 0, 0, 0, 0, 255, 63, 255, 127, 0, 0, 0, 0, 245, 233, 129, 218, 0, 0, 125, 37, 255, 63, 129, 218, 0, 0, 125, 37, 245, 233, 129, 218, 0, 0, 125, 37, 166, 214, 255, 255, 0, 0, 255, 127, 255, 63, 255, 255, 0, 0, 255, 127, 4, 193, 255, 255, 0, 0, 255, 127, 166, 214, 129, 218, 0, 0, 129, 218, 255, 63, 129, 218, 0, 0, 129, 218, 94, 164, 129, 218, 0, 0, 129, 218, 4, 193, 255, 127, 0, 0, 255, 255, 94, 164, 255, 127, 0, 0, 255, 255, 255, 63, 255, 127, 0, 0, 255, 255, 94, 164, 125, 37, 0, 0, 129, 218, 4, 193, 125, 37, 0, 0, 129, 218, 94, 164, 125, 37, 0, 0, 129, 218, 255, 63, 0, 0, 0, 0, 255, 127, 4, 193, 0, 0, 0, 0, 255, 127, 166, 214, 0, 0, 0, 0, 255, 127, 255, 63, 125, 37, 0, 0, 125, 37, 166, 214, 125, 37, 0, 0, 125, 37, 245, 233, 125, 37, 0, 0, 125, 37, 255, 63, 255, 127, 255, 255, 255, 127, 4, 193, 255, 127, 255, 255, 255, 127, 166, 214, 255, 127, 255, 255, 255, 127, 245, 233, 255, 127, 255, 255, 255, 127, 94, 164, 255, 127, 255, 255, 255, 127, 94, 164, 255, 127, 255, 255, 255, 127, 245, 233, 255, 127, 255, 255, 255, 127, 4, 193, 255, 127, 255, 255, 255, 127, 166, 214, 141, 224, 192, 168, 0, 0, 255, 127, 61, 215, 142, 96, 0, 0, 255, 127, 61, 215, 142, 96, 126, 190, 95, 89, 0, 0, 255, 127, 18, 179, 110, 96, 126, 190, 95, 89, 0, 0, 255, 127, 169, 177, 25, 110, 18, 179, 110, 96, 24, 238, 85, 206, 0, 0, 255, 127, 169, 177, 25, 110, 110, 224, 235, 204, 24, 238, 85, 206, 0, 0, 255, 127, 110, 224, 235, 204, 95, 217, 128, 193, 0, 0, 255, 127, 95, 217, 128, 193, 141, 224, 192, 168, 0, 0, 255, 127, 110, 224, 235, 204, 95, 217, 128, 193, 141, 224, 192, 168, 24, 238, 85, 206, 169, 177, 25, 110, 61, 215, 142, 96, 18, 179, 110, 96, 126, 190, 95, 89)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_tk3cf")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Tree" parent="." instance=ExtResource("1_s1y2m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, 0)
+
+[node name="Cylinder" parent="Tree" index="0"]
+material_override = SubResource("StandardMaterial3D_7ighk")
+
+[node name="Cone_001" parent="Tree" index="1"]
+material_override = SubResource("StandardMaterial3D_ynsty")
+
+[node name="Cone_002" parent="Tree" index="2"]
+material_override = SubResource("StandardMaterial3D_ynsty")
+
+[node name="Cone_003" parent="Tree" index="3"]
+material_override = SubResource("StandardMaterial3D_ynsty")
+
+[node name="Tree2" parent="." instance=ExtResource("1_s1y2m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.1182, 7, 0)
+
+[node name="Cylinder" parent="Tree2" index="0"]
+material_override = SubResource("StandardMaterial3D_7ighk")
+
+[node name="Cone_001" parent="Tree2" index="1"]
+material_override = SubResource("StandardMaterial3D_ynsty")
+
+[node name="Cone_002" parent="Tree2" index="2"]
+material_override = SubResource("StandardMaterial3D_ynsty")
+
+[node name="Cone_003" parent="Tree2" index="3"]
+material_override = SubResource("StandardMaterial3D_ynsty")
+
+[node name="Tree3" parent="." instance=ExtResource("1_s1y2m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.7092, 7, 0)
+
+[node name="Cylinder" parent="Tree3" index="0"]
+material_override = SubResource("StandardMaterial3D_7ighk")
+
+[node name="Cone_001" parent="Tree3" index="1"]
+material_override = SubResource("StandardMaterial3D_ynsty")
+
+[node name="Cone_002" parent="Tree3" index="2"]
+material_override = SubResource("StandardMaterial3D_ynsty")
+
+[node name="Cone_003" parent="Tree3" index="3"]
+material_override = SubResource("StandardMaterial3D_ynsty")
+
+[node name="Tree4" parent="." instance=ExtResource("1_s1y2m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.0827, 7, -16.8167)
+
+[node name="Cylinder" parent="Tree4" index="0"]
+material_override = SubResource("StandardMaterial3D_7ighk")
+
+[node name="Cone_001" parent="Tree4" index="1"]
+material_override = SubResource("StandardMaterial3D_ynsty")
+
+[node name="Cone_002" parent="Tree4" index="2"]
+material_override = SubResource("StandardMaterial3D_ynsty")
+
+[node name="Cone_003" parent="Tree4" index="3"]
+material_override = SubResource("StandardMaterial3D_ynsty")
+
+[node name="Tree5" parent="." instance=ExtResource("1_s1y2m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.785, 7, -14.0827)
+
+[node name="Cylinder" parent="Tree5" index="0"]
+material_override = SubResource("StandardMaterial3D_7ighk")
+
+[node name="Cone_001" parent="Tree5" index="1"]
+material_override = SubResource("StandardMaterial3D_ynsty")
+
+[node name="Cone_002" parent="Tree5" index="2"]
+material_override = SubResource("StandardMaterial3D_ynsty")
+
+[node name="Cone_003" parent="Tree5" index="3"]
+material_override = SubResource("StandardMaterial3D_ynsty")
+
+[node name="Tree6" parent="." instance=ExtResource("1_s1y2m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2138, 7, 13.1026)
+
+[node name="Cylinder" parent="Tree6" index="0"]
+material_override = SubResource("StandardMaterial3D_7ighk")
+
+[node name="Cone_001" parent="Tree6" index="1"]
+material_override = SubResource("StandardMaterial3D_ynsty")
+
+[node name="Cone_002" parent="Tree6" index="2"]
+material_override = SubResource("StandardMaterial3D_ynsty")
+
+[node name="Cone_003" parent="Tree6" index="3"]
+material_override = SubResource("StandardMaterial3D_ynsty")
+
+[node name="Cylinder2" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.0315, 0, 8.8332)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_004" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.0315, 1.34, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_005" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 24.0315, 5, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_006" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 24.0315, 8, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder3" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.0315, 0, 8.8332)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_007" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.0315, 1.34, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_008" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 24.0315, 5, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_009" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 24.0315, 8, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder4" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.0315, 0, 8.8332)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_010" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.0315, 1.34, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_011" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 24.0315, 5, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_012" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 24.0315, 8, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder5" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.0315, 0, 8.8332)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_013" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.0315, 1.34, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_014" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 24.0315, 5, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_015" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 24.0315, 8, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder6" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.0315, 0, 8.8332)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_016" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.0315, 1.34, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_017" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 24.0315, 5, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_018" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 24.0315, 8, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder7" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.0315, 0, 8.8332)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_019" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.0315, 1.34, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_020" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 24.0315, 5, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_021" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 24.0315, 8, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder8" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.2006, 0, 8.8332)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_022" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.2006, 1.34, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_023" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -25.2006, 5, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_024" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -25.2006, 8, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder9" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.2006, 0, 8.8332)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_025" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.2006, 1.34, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_026" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -25.2006, 5, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_027" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -25.2006, 8, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder10" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.2006, 0, 8.8332)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_028" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.2006, 1.34, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_029" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -25.2006, 5, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_030" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -25.2006, 8, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder11" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.2006, 0, 8.8332)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_031" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.2006, 1.34, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_032" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -25.2006, 5, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_033" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -25.2006, 8, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder12" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.2006, 0, 8.8332)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_034" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.2006, 1.34, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_035" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -25.2006, 5, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_036" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -25.2006, 8, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder13" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.2006, 0, 8.8332)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_037" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.2006, 1.34, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_038" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -25.2006, 5, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_039" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -25.2006, 8, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder14" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 0, 8.8332)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_040" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 1.34, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_041" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -9.61261, 5, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_042" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9.61261, 8, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder15" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 0, 8.8332)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_043" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 1.34, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_044" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -9.61261, 5, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_045" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9.61261, 8, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder16" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 0, 8.8332)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_046" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 1.34, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_047" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -9.61261, 5, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_048" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9.61261, 8, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder17" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 0, 8.8332)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_049" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 1.34, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_050" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -9.61261, 5, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_051" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9.61261, 8, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder18" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 0, 8.8332)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_052" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 1.34, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_053" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -9.61261, 5, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_054" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9.61261, 8, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder19" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 0, 8.8332)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_055" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 1.34, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_056" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -9.61261, 5, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_057" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9.61261, 8, 8.8332)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder20" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 0, -45.0753)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_058" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 1.34, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_059" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -9.61261, 5, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_060" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9.61261, 8, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder21" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 0, -45.0753)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_061" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 1.34, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_062" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -9.61261, 5, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_063" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9.61261, 8, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder22" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 0, -45.0753)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_064" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 1.34, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_065" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -9.61261, 5, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_066" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9.61261, 8, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder23" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 0, -45.0753)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_067" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 1.34, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_068" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -9.61261, 5, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_069" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9.61261, 8, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder24" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 0, -45.0753)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_070" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 1.34, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_071" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -9.61261, 5, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_072" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9.61261, 8, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder25" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 0, -45.0753)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_073" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.61261, 1.34, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_074" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -9.61261, 5, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_075" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -9.61261, 8, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder26" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 0, -45.0753)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_076" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 1.34, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_077" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 22.083, 5, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_078" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 22.083, 8, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder27" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 0, -45.0753)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_079" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 1.34, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_080" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 22.083, 5, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_081" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 22.083, 8, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder28" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 0, -45.0753)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_082" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 1.34, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_083" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 22.083, 5, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_084" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 22.083, 8, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder29" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 0, -45.0753)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_085" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 1.34, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_086" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 22.083, 5, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_087" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 22.083, 8, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder30" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 0, -45.0753)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_088" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 1.34, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_089" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 22.083, 5, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_090" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 22.083, 8, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder31" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 0, -45.0753)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_091" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 1.34, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_092" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 22.083, 5, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_093" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 22.083, 8, -45.0753)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder32" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 0, -24.5511)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_094" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 1.34, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_095" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 22.083, 5, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_096" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 22.083, 8, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder33" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 0, -24.5511)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_097" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 1.34, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_098" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 22.083, 5, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_099" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 22.083, 8, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder34" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 0, -24.5511)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_100" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 1.34, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_101" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 22.083, 5, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_102" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 22.083, 8, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder35" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 0, -24.5511)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_103" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 1.34, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_104" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 22.083, 5, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_105" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 22.083, 8, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder36" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 0, -24.5511)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_106" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 1.34, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_107" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 22.083, 5, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_108" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 22.083, 8, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder37" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 0, -24.5511)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_109" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.083, 1.34, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_110" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 22.083, 5, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_111" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 22.083, 8, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder38" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 0, -24.5511)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_112" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 1.34, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_113" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -39.0999, 5, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_114" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -39.0999, 8, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder39" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 0, -24.5511)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_115" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 1.34, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_116" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -39.0999, 5, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_117" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -39.0999, 8, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder40" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 0, -24.5511)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_118" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 1.34, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_119" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -39.0999, 5, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_120" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -39.0999, 8, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder41" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 0, -24.5511)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_121" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 1.34, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_122" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -39.0999, 5, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_123" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -39.0999, 8, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder42" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 0, -24.5511)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_124" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 1.34, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_125" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -39.0999, 5, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_126" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -39.0999, 8, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder43" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 0, -24.5511)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_127" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 1.34, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_128" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -39.0999, 5, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_129" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -39.0999, 8, -24.5511)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder44" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 0, 0.259802)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_130" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 1.34, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_131" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -39.0999, 5, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_132" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -39.0999, 8, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder45" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 0, 0.259802)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_133" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 1.34, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_134" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -39.0999, 5, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_135" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -39.0999, 8, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder46" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 0, 0.259802)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_136" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 1.34, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_137" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -39.0999, 5, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_138" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -39.0999, 8, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder47" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 0, 0.259802)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_139" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 1.34, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_140" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -39.0999, 5, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_141" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -39.0999, 8, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder48" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 0, 0.259802)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_142" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 1.34, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_143" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -39.0999, 5, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_144" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -39.0999, 8, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder49" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 0, 0.259802)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_145" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.0999, 1.34, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_146" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -39.0999, 5, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_147" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -39.0999, 8, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder50" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 0, 0.259802)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_148" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 1.34, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_149" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -23.9016, 5, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_150" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -23.9016, 8, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder51" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 0, 0.259802)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_151" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 1.34, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_152" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -23.9016, 5, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_153" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -23.9016, 8, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder52" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 0, 0.259802)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_154" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 1.34, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_155" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -23.9016, 5, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_156" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -23.9016, 8, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder53" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 0, 0.259802)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_157" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 1.34, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_158" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -23.9016, 5, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_159" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -23.9016, 8, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder54" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 0, 0.259802)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_160" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 1.34, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_161" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -23.9016, 5, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_162" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -23.9016, 8, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder55" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 0, 0.259802)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_163" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 1.34, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_164" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -23.9016, 5, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_165" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -23.9016, 8, 0.259802)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder56" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 0, -48.8424)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_166" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 1.34, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_167" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -23.9016, 5, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_168" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -23.9016, 8, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder57" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 0, -48.8424)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_169" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 1.34, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_170" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -23.9016, 5, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_171" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -23.9016, 8, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder58" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 0, -48.8424)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_172" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 1.34, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_173" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -23.9016, 5, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_174" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -23.9016, 8, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder59" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 0, -48.8424)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_175" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 1.34, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_176" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -23.9016, 5, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_177" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -23.9016, 8, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder60" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 0, -48.8424)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_178" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 1.34, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_179" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -23.9016, 5, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_180" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -23.9016, 8, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder61" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 0, -48.8424)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_181" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9016, 1.34, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_182" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -23.9016, 5, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_183" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -23.9016, 8, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder62" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 0, -48.8424)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_184" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 1.34, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_185" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 39.7494, 5, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_186" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 39.7494, 8, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder63" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 0, -48.8424)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_187" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 1.34, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_188" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 39.7494, 5, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_189" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 39.7494, 8, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder64" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 0, -48.8424)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_190" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 1.34, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_191" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 39.7494, 5, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_192" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 39.7494, 8, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder65" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 0, -48.8424)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_193" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 1.34, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_194" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 39.7494, 5, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_195" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 39.7494, 8, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder66" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 0, -48.8424)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_196" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 1.34, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_197" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 39.7494, 5, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_198" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 39.7494, 8, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder67" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 0, -48.8424)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_199" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 1.34, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_200" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 39.7494, 5, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_201" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 39.7494, 8, -48.8424)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder68" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 0, -64.8201)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_202" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 1.34, -64.8201)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_203" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 39.7494, 5, -64.8201)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_204" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 39.7494, 8, -64.8201)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder69" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 0, -64.8201)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_205" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 1.34, -64.8201)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_206" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 39.7494, 5, -64.8201)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_207" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 39.7494, 8, -64.8201)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder70" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 0, -64.8201)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_208" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 1.34, -64.8201)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_209" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 39.7494, 5, -64.8201)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_210" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 39.7494, 8, -64.8201)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder71" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 0, -64.8201)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_211" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 1.34, -64.8201)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_212" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 39.7494, 5, -64.8201)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_213" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 39.7494, 8, -64.8201)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder72" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 0, -64.8201)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_214" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 1.34, -64.8201)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_215" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 39.7494, 5, -64.8201)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_216" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 39.7494, 8, -64.8201)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder73" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 0, -64.8201)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_217" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7494, 1.34, -64.8201)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_218" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 39.7494, 5, -64.8201)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_219" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 39.7494, 8, -64.8201)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder74" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 0, -56.6364)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_220" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 1.34, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_221" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 8.18369, 5, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_222" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8.18369, 8, -56.6364)
+visible = false
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder75" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 0, -56.6364)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_223" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 1.34, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_225" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8.18369, 8, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder76" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 0, -56.6364)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_226" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 1.34, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_227" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 8.18369, 5, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_228" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8.18369, 8, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder77" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 0, -56.6364)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_229" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 1.34, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_230" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 8.18369, 5, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_231" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8.18369, 8, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder78" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 0, -56.6364)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_232" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 1.34, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_233" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 8.18369, 5, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_234" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8.18369, 8, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder79" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 0, -56.6364)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_235" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 1.34, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_236" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 8.18369, 5, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_237" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8.18369, 8, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder80" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 0, -56.6364)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_238" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 1.34, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_239" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 8.18369, 5, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_240" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8.18369, 8, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder81" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 0, -56.6364)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_241" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 1.34, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_242" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 8.18369, 5, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_243" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8.18369, 8, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder82" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 0, -56.6364)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_244" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 1.34, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_245" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 8.18369, 5, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_246" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8.18369, 8, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder83" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 0, -56.6364)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_247" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 1.34, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_248" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 8.18369, 5, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_249" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8.18369, 8, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder84" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 0, -56.6364)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_250" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 1.34, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_251" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 8.18369, 5, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_252" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8.18369, 8, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[node name="Cylinder85" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 0, -56.6364)
+material_override = SubResource("StandardMaterial3D_7ighk")
+mesh = SubResource("ArrayMesh_4rdns")
+skeleton = NodePath("")
+
+[node name="Cone_253" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18369, 1.34, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_fi1a6")
+skeleton = NodePath("")
+
+[node name="Cone_254" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 8.18369, 5, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_3v02s")
+skeleton = NodePath("")
+
+[node name="Cone_255" type="MeshInstance3D" parent="Tree6"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8.18369, 8, -56.6364)
+material_override = SubResource("StandardMaterial3D_ynsty")
+mesh = SubResource("ArrayMesh_lpb65")
+skeleton = NodePath("")
+
+[editable path="Tree"]
+[editable path="Tree2"]
+[editable path="Tree3"]
+[editable path="Tree4"]
+[editable path="Tree5"]
+[editable path="Tree6"]
